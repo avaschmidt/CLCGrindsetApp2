@@ -35,6 +35,11 @@ class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = classesTaken[indexPath.row].courseName
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AppData.courseToRate = classesTaken[indexPath.row]
+    }
     /*
     // MARK: - Navigation
 

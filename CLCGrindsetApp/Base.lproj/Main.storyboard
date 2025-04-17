@@ -119,7 +119,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OEE-q8-F8N"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="OEE-q8-F8N" firstAttribute="bottom" secondItem="H87-P6-ELc" secondAttribute="bottom" id="FOU-2t-bq9"/>
                             <constraint firstItem="H87-P6-ELc" firstAttribute="top" secondItem="OEE-q8-F8N" secondAttribute="top" id="fhZ-2g-0U0"/>
@@ -171,7 +171,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Voh-am-dJg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="Voh-am-dJg" firstAttribute="bottom" secondItem="R1m-nF-d8l" secondAttribute="bottom" id="K4L-2U-vco"/>
                             <constraint firstItem="R1m-nF-d8l" firstAttribute="top" secondItem="Voh-am-dJg" secondAttribute="top" id="Q1f-1d-oF6"/>
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3so-jg-TrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.2824427480916" y="-715.49295774647896"/>
+            <point key="canvasLocation" x="1773" y="-723"/>
         </scene>
         <!--Student Menu View Controller-->
         <scene sceneID="x5W-l5-dxE">
@@ -225,7 +225,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJr-Ex-MPo">
                                         <rect key="frame" x="0.0" y="429" width="393" height="143"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Current Courses">
+                                        <buttonConfiguration key="configuration" style="filled" title="Your Courses">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -355,6 +355,21 @@
             </objects>
             <point key="canvasLocation" x="1551.9083969465648" y="4.9295774647887329"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dci-5c-Fgc">
+            <objects>
+                <viewController id="Pfm-2H-b5R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSd-ij-hgK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WdQ-m8-o1V"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXP-vO-6T2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552" y="693"/>
+        </scene>
         <!--Make Schedule View Controller-->
         <scene sceneID="EZD-Bi-5qT">
             <objects>
@@ -458,6 +473,9 @@
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -466,6 +484,9 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
