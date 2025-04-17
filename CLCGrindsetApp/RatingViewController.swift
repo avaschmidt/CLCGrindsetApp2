@@ -38,7 +38,7 @@ class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        AppData.courseToRate = classesTaken[indexPath.row]
     }
     /*
     // MARK: - Navigation
