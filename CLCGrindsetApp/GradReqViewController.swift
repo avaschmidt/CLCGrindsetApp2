@@ -8,12 +8,15 @@
 import UIKit
 
 class GradReqViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var reqTableView: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         classes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = identifier
+        var cell = reqTableView.dequeueReusableCell(withIdentifier: "blah blah blah fix me xjowiehaoiwheg")
     }
     
 
