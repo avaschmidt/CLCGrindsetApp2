@@ -22,8 +22,9 @@ class CLCCLass{
     var teachers: [String]
     //name of class
     var prerequisites: [String]
+    var yearsAvalible: [Int]
     
-    init(name: String, id: String, credits: [Double], creditTypes: [String], teachers: [String], prerequisites: [String]) {
+    init(name: String, id: String, credits: [Double], creditTypes: [String], teachers: [String], prerequisites: [String], yearsAvalible: [Int]) {
         self.name = name
         self.id = id
         self.credits = credits
@@ -33,6 +34,7 @@ class CLCCLass{
         self.calculatedRating = 0
         self.teachers = teachers
         self.prerequisites = prerequisites
+        self.yearsAvalible = yearsAvalible
     }
     
     func updateRating(){
