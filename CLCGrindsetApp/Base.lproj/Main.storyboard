@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="830" y="5"/>
         </scene>
-        <!--View Controller-->
+        <!--Rating View Controller-->
         <scene sceneID="1sr-vt-D1g">
             <objects>
-                <viewController id="CPv-WM-w0C" sceneMemberID="viewController">
+                <viewController id="CPv-WM-w0C" customClass="RatingViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9v-Oj-KtE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,6 +176,9 @@
                         <viewLayoutGuide key="safeArea" id="zuD-DM-m8A"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableViewOutlet" destination="i5t-3f-RSq" id="Qjd-N5-2J7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qph-ie-udm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
