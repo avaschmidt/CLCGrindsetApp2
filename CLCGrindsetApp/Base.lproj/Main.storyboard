@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1552" y="5"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Schedule View Controller-->
         <scene sceneID="EZD-Bi-5qT">
             <objects>
-                <viewController id="mU0-VZ-U4F" sceneMemberID="viewController">
+                <viewController id="mU0-VZ-U4F" customClass="MakeScheduleViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pb3-zm-2JK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
