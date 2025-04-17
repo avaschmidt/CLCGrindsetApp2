@@ -6,6 +6,8 @@ class MakeScheduleViewController: UIViewController, UITableViewDelegate, UITable
    
     
 
+    @IBOutlet weak var scheduleTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
