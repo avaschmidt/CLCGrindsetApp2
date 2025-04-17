@@ -32,8 +32,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let course = filteredCourses[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "\(course.courseID) - \(course.courseName)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SubjectsCell", for: indexPath)
+        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
         return cell
     }
 
