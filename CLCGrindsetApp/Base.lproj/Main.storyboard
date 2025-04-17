@@ -96,7 +96,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHi-YV-vCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-703"/>
+            <point key="canvasLocation" x="98" y="-723"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w2Z-ki-VAv">
+            <objects>
+                <viewController id="qHd-Ig-Mrz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZA-Eu-FuW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R1m-nF-d8l">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are You A..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-sh-WBf">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="379.66666666666669"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXV-gQ-5Jc">
+                                        <rect key="frame" x="0.0" y="379.66666666666669" width="393" height="151.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Students"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-14-DXN">
+                                        <rect key="frame" x="0.0" y="531.33333333333337" width="393" height="227.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Teachers"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6LV-sh-WBf" firstAttribute="height" secondItem="R1m-nF-d8l" secondAttribute="height" multiplier="0.5" id="9ST-Cp-QfC"/>
+                                    <constraint firstItem="AXV-gQ-5Jc" firstAttribute="height" secondItem="R1m-nF-d8l" secondAttribute="height" multiplier="0.2" id="IF0-pQ-PYa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Voh-am-dJg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Voh-am-dJg" firstAttribute="bottom" secondItem="R1m-nF-d8l" secondAttribute="bottom" id="K4L-2U-vco"/>
+                            <constraint firstItem="R1m-nF-d8l" firstAttribute="top" secondItem="Voh-am-dJg" secondAttribute="top" id="Q1f-1d-oF6"/>
+                            <constraint firstItem="R1m-nF-d8l" firstAttribute="leading" secondItem="Voh-am-dJg" secondAttribute="leading" id="UkO-QY-Rpn"/>
+                            <constraint firstItem="Voh-am-dJg" firstAttribute="trailing" secondItem="R1m-nF-d8l" secondAttribute="trailing" id="eRP-tq-3T9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3so-jg-TrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="-715"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C9Q-sm-dR3">
