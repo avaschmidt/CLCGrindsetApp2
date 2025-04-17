@@ -97,8 +97,19 @@
                     <view key="view" contentMode="scaleToFill" id="pb3-zm-2JK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oL3-r2-1LO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OnK-yI-PK4"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="OnK-yI-PK4" firstAttribute="bottom" secondItem="oL3-r2-1LO" secondAttribute="bottom" id="IAV-2w-TUR"/>
+                            <constraint firstItem="OnK-yI-PK4" firstAttribute="trailing" secondItem="oL3-r2-1LO" secondAttribute="trailing" id="Khi-cc-opI"/>
+                            <constraint firstItem="oL3-r2-1LO" firstAttribute="top" secondItem="OnK-yI-PK4" secondAttribute="top" id="kKr-tP-Xun"/>
+                            <constraint firstItem="oL3-r2-1LO" firstAttribute="leading" secondItem="OnK-yI-PK4" secondAttribute="leading" id="uZt-nF-8VZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIp-Q5-wGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
