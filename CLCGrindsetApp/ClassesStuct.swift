@@ -34,13 +34,13 @@ func loadCoursesFromCSV() {
     do {
         let data = try String(contentsOfFile: filePath, encoding: .utf8)
         var rows = data.components(separatedBy: .newlines).filter { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
-        rows.removeFirst() // remove header
+        rows.removeFirst()
 
         for (index, row) in rows.enumerated() {
-            let columns = row.components(separatedBy: ",") // use tab delimiter if you're using tab-delimited
+            let columns = row.components(separatedBy: ",")
 
             if columns.count < 12 {
-                print("⚠️ Skipping row \(index + 2): expected 12 columns, got \(columns.count)")
+                print("Skipping row \(index + 2): expected 12 columns, got \(columns.count)")
                 continue
             }
 
