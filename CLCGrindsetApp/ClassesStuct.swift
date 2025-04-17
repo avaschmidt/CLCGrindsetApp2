@@ -9,6 +9,7 @@ import Foundation
 
 var allCourses: [Course] = []
 var filteredCourses: [Course] = []
+var classesTaken: [Course] = []
 
 struct Course {
     var courseID: String
