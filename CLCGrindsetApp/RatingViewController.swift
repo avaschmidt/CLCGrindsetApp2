@@ -27,11 +27,18 @@ class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        classesTaken.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        cell.textLabel?.text = classesTaken[indexPath.row].courseName
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AppData.courseToRate = classesTaken[indexPath.row]
     }
     /*
     // MARK: - Navigation
