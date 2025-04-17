@@ -223,7 +223,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJr-Ex-MPo">
                                         <rect key="frame" x="0.0" y="429" width="393" height="143"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Current Courses">
+                                        <buttonConfiguration key="configuration" style="filled" title="Your Courses">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
                                         </buttonConfiguration>
                                         <connections>
