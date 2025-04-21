@@ -33,7 +33,11 @@ class GradReqViewController: UIViewController, UITableViewDataSource, UITableVie
     let creditReqs = [4.0, 3.0, 2.0, 1.0, 0.5, 0.25, 2.25, 2.0, 4.0]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        reqTableView.delegate = self
+        reqTableView.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
     
