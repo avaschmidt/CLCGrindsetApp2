@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="2242" y="693"/>
         </scene>
         <!--Classes Of Subject View Controller-->
         <scene sceneID="n58-Z8-Ti8">
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-gr-bF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="786"/>
+            <point key="canvasLocation" x="2242" y="1425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T80-80-0ee">
@@ -208,9 +208,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="View Ranks">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="paS-Af-Fa0"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vZ-is-kRi">
                                         <rect key="frame" x="0.0" y="286" width="393" height="143"/>
@@ -551,6 +548,7 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
                                                             <action selector="edit1Action:" destination="mU0-VZ-U4F" eventType="touchUpInside" id="fQW-Pu-PrS"/>
+                                                            <segue destination="BYZ-38-t0r" kind="show" id="QZI-Af-lb7"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-vm-Fhi">
@@ -643,6 +641,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PbU-1v-JRb"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showSubjects" id="RAH-eX-Exf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIp-Q5-wGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -692,6 +693,9 @@
             <point key="canvasLocation" x="96.946564885496173" y="-723.23943661971839"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QZI-Af-lb7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
