@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
+    
+    var uniqueSubjects: [String] = []
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -22,18 +24,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func Sort(_ sender: UIButton) {
-        filteredCourses = allCourses.filter { $0.subject == "Math" }
+//        filteredCourses = allCourses.filter { $0.subject == "Math" }
+        uniqueSubjects = Array(Set(allCourses.map { $0.subject }))
         tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredCourses.count
+        return uniqueSubjects.count
         }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let course = filteredCourses[indexPath.row]
+        let course = uniqueSubjects[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubjectsCell", for: indexPath)
-        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
+//        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
         return cell
     }
 
