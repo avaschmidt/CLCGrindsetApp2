@@ -16,7 +16,14 @@ class GradReqViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = reqTableView.dequeueReusableCell(withIdentifier: "blah blah blah fix me xjowiehaoiwheg")
+        let index = indexPath.row
+        
+        var cell = reqTableView.dequeueReusableCell(withIdentifier: "ReqCell") as! ReqCell
+        
+        cell.customize(name: classes[index], creditText: "\(creditReqs[index]) credits required")
+        
+        return cell
+    }
     
 
     let classes = ["English", "Mathematics", "Science", "Computer science", "Drivers Ed", "Consumer Ed", "PE / Gym", "Social Science", "Electives"]
