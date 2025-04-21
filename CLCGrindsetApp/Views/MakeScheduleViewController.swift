@@ -4,23 +4,38 @@ import UIKit
 
 class MakeScheduleViewController: UIViewController {
    
-    //UITableViewDelegate, UITableViewDataSource
-    @IBOutlet weak var scheduleTableView: UITableView!
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBAction func edit1Action(_ sender: UIButton) {
     }
     
-    /*func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+    @IBAction func edit2Action(_ sender: UIButton) {
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-    }*/
+    @IBAction func edit3Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit4Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit5Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit6Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit7Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit8Action(_ sender: UIButton) {
+    }
+    
+    @IBAction func edit9Action(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
     
 
 }

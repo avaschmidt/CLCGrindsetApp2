@@ -13,5 +13,7 @@ class AppData{
     
     static var courseToRate: Course?
     
+    //static var studentSchedule = [String]()
+    
     
 }
