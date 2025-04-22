@@ -58,16 +58,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U6x-TD-C9D">
-                                <rect key="frame" x="30" y="68" width="333" height="716"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U6x-TD-C9D">
+                                <rect key="frame" x="0.0" y="100" width="393" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassesCell" id="qZs-TA-5Hn">
-                                        <rect key="frame" x="0.0" y="50" width="333" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZs-TA-5Hn" id="iCI-bd-05X">
-                                            <rect key="frame" x="0.0" y="0.0" width="333" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -75,9 +74,18 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2g3-jR-jwv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="U6x-TD-C9D" firstAttribute="leading" secondItem="2g3-jR-jwv" secondAttribute="leading" id="GP4-3I-Krm"/>
+                            <constraint firstItem="U6x-TD-C9D" firstAttribute="top" secondItem="nj5-Ok-Oye" secondAttribute="top" constant="100" id="YXs-9Y-yOh"/>
+                            <constraint firstItem="2g3-jR-jwv" firstAttribute="trailing" secondItem="U6x-TD-C9D" secondAttribute="trailing" id="Zw6-tJ-3YZ"/>
+                            <constraint firstItem="2g3-jR-jwv" firstAttribute="bottom" secondItem="U6x-TD-C9D" secondAttribute="bottom" constant="100" id="lAv-rL-G7A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FRb-NY-nxI"/>
+                    <connections>
+                        <outlet property="tableView" destination="U6x-TD-C9D" id="Xzg-6v-Gxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-gr-bF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,6 +26,7 @@ struct Course {
     var courseType: String
 }
 
+
 func loadCoursesFromCSV() {
     guard let filePath = Bundle.main.path(forResource: "Classes", ofType: "csv") else {
         print("CSV file not found")
