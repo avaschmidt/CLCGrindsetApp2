@@ -86,10 +86,40 @@ class MakeScheduleViewController: UIViewController {
         period7Class.text = AppData.studentSchedule[6]
         period8Class.text = AppData.studentSchedule[7]
         period9Class.text = AppData.studentSchedule[8]
+        
+        
     }
     
     
+    // create a class for studentSchedule so that you can use firebase stuff (also will make array stuff easier)
     
+    /*func readFromFirebase() {
+        // object
+        AppData.ref.child("studentSchedule").observe(.childAdded, with: { (snapshot) in
+            
+            let dict = snapshot.value as! [String:Any]
+                   
+            let s = GroceryItem(dict: dict)
+            
+            s.key = snapshot.key
+
+            // adding the student object to the Student array
+            
+            var yes = 0
+            for g in self.groceries {
+                if g.name == s.name && g.quantity == s.quantity {
+                    yes = 1
+                }
+            }
+            if yes == 0 {
+                self.groceries.append(s)
+            }
+            
+            self.groceryTableView.reloadData()
+            // should only add the student if the student isn’t already in the array
+            // good place to update the tableview also
+                    
+        })*/
     
     
     
