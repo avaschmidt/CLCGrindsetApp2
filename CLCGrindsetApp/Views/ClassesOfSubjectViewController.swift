@@ -14,39 +14,6 @@ class ClassesOfSubjectViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-//    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
-    //    my name is ryan and i smell
+
      
 }

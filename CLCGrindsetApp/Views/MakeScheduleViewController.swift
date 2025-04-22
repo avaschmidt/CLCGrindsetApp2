@@ -3,7 +3,26 @@
 import UIKit
 
 class MakeScheduleViewController: UIViewController {
-   
+    
+    @IBOutlet weak var period1Class: UILabel!
+    
+    @IBOutlet weak var period2Class: UILabel!
+    
+    @IBOutlet weak var period3Class: UILabel!
+    
+    @IBOutlet weak var period4Class: UILabel!
+    
+    @IBOutlet weak var period5Class: UILabel!
+    
+    @IBOutlet weak var period6Class: UILabel!
+    
+    @IBOutlet weak var period7Class: UILabel!
+    
+    @IBOutlet weak var period8Class: UILabel!
+    
+    @IBOutlet weak var period9Class: UILabel!
+    
+    
     @IBAction func edit1Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
     }
@@ -39,6 +58,37 @@ class MakeScheduleViewController: UIViewController {
     @IBAction func edit9Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
     }
+    
+    /*override func viewDidAppear(_ animated: Bool) {
+        /*AppData.studentSchedule = ["\(period1Class.text!)", "\(period2Class.text!)", "\(period3Class.text!)", "\(period4Class.text!)", "\(period5Class.text!)", "\(period6Class.text!)", "\(period7Class.text!)", "\(period8Class.text!)", "\(period9Class.text!)"]*/
+    }*/
+    
+    override func viewDidLoad() {
+        period1Class.text = AppData.studentSchedule[0]
+        period2Class.text = AppData.studentSchedule[1]
+        period3Class.text = AppData.studentSchedule[2]
+        period4Class.text = AppData.studentSchedule[3]
+        period5Class.text = AppData.studentSchedule[4]
+        period6Class.text = AppData.studentSchedule[5]
+        period7Class.text = AppData.studentSchedule[6]
+        period8Class.text = AppData.studentSchedule[7]
+        period9Class.text = AppData.studentSchedule[8]
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        period1Class.text = AppData.studentSchedule[0]
+        period2Class.text = AppData.studentSchedule[1]
+        period3Class.text = AppData.studentSchedule[2]
+        period4Class.text = AppData.studentSchedule[3]
+        period5Class.text = AppData.studentSchedule[4]
+        period6Class.text = AppData.studentSchedule[5]
+        period7Class.text = AppData.studentSchedule[6]
+        period8Class.text = AppData.studentSchedule[7]
+        period9Class.text = AppData.studentSchedule[8]
+    }
+    
+    
     
     
     
