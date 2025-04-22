@@ -65,4 +65,4 @@ class ratingTableCell : UITableViewCell {
     }
     */
 
-}
+
