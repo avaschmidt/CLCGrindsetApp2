@@ -20,7 +20,9 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        }
         tableView.dataSource = self
         filteredCourses = allCourses
-        
+        uniqueSubjects = Array(Set(allCourses.map { $0.subject }))
+        tableView.reloadData()
+
     }
     
     @IBAction func Sort(_ sender: UIButton) {
@@ -34,9 +36,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let course = uniqueSubjects[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubjectsCell", for: indexPath)
 //        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
+        cell.textLabel?.text = "\(uniqueSubjects[indexPath.row])"
         return cell
     }
 
