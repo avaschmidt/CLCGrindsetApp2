@@ -9,6 +9,7 @@ import UIKit
 
 class ClassReqSpecificViewController: UIViewController {
 
+    @IBOutlet weak var tableviewOutlet: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
