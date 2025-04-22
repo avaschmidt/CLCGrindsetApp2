@@ -731,6 +731,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="PbU-1v-JRb"/>
                     <connections>
+                        <outlet property="period1Class" destination="FYq-TH-oVV" id="vcT-mG-Jdx"/>
+                        <outlet property="period2Class" destination="Vz7-Qw-DBT" id="9Aa-RZ-uhW"/>
+                        <outlet property="period3Class" destination="e8y-oh-gyg" id="HwD-4l-R64"/>
+                        <outlet property="period4Class" destination="Us1-nZ-a4p" id="dwQ-Fy-J9Q"/>
+                        <outlet property="period5Class" destination="BhR-ZN-yt6" id="H7I-8V-7eu"/>
+                        <outlet property="period6Class" destination="1VO-MZ-UoI" id="QGM-PE-oYh"/>
+                        <outlet property="period7Class" destination="trP-2v-PfD" id="6Zm-3u-iIw"/>
+                        <outlet property="period8Class" destination="Ye1-hv-ADu" id="COa-XB-5QP"/>
+                        <outlet property="period9Class" destination="jG4-zO-pn2" id="Ljd-hR-uEs"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showSubjects" id="RAH-eX-Exf"/>
                     </connections>
                 </viewController>
