@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        }
         tableView.dataSource = self
         filteredCourses = allCourses
-        uniqueSubjects = Array(Set(allCourses.map { $0.subject }))
+        uniqueSubjects = Array(Set(allCourses.map { $0.subject })).sorted()
         tableView.reloadData()
 
     }
