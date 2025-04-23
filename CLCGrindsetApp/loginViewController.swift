@@ -39,9 +39,9 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             
             for key in data.keys{
                     let dataArray = data[key] as! [String : Any]
-//                    let uncodedAccount = Example(dict: dataArray)
-//                    AppData.usernames.append(uncodedAccount.Username)
-//                    AppData.passwords.append(uncodedAccount.Password)
+                    let uncodedAccount = Student(dict: dataArray)
+                AppData.usernames.append(uncodedAccount.username)
+                AppData.passwords.append(uncodedAccount.password)
             }
             
             

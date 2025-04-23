@@ -30,8 +30,8 @@ class newAccountViewController: UIViewController {
         }
         
         if (!userFound){
-//            var newPerson = Example(Password: password, Username: username)
-//            newPerson.saveToFirestore(docRef: AppData.ref)
+            var newStudent = Student(dict: [username: password])
+            newStudent.addToFirebase(docRef: AppData.ref)
         }else{
             print("User has been already added.")
         }

@@ -21,7 +21,7 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         currentSubjectClasses = allCourses.filter { $0.subject == subjectClicked.subject }
-
+        tableView.dataSource = self
 
                 
     }
