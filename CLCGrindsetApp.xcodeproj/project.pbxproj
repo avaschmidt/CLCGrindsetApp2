@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231A42982DB914FB00B0FA38 /* newAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A42972DB914FB00B0FA38 /* newAccountViewController.swift */; };
 		6B5F708F2DB7C91D000910E4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5F708E2DB7C91D000910E4 /* FirebaseAuth */; };
 		6B5F70912DB7C91D000910E4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5F70902DB7C91D000910E4 /* FirebaseDatabase */; };
 		6B5F70932DB7C91D000910E4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5F70922DB7C91D000910E4 /* FirebaseFirestore */; };
@@ -33,6 +34,7 @@
 		04B392CE2DAE8FB5000AC2C3 /* CLCGrindsetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLCGrindsetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B392E42DAE8FB7000AC2C3 /* CLCGrindsetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLCGrindsetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B392EE2DAE8FB7000AC2C3 /* CLCGrindsetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLCGrindsetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		231A42972DB914FB00B0FA38 /* newAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -97,6 +99,7 @@
 		04B392C52DAE8FB5000AC2C3 = {
 			isa = PBXGroup;
 			children = (
+				231A42972DB914FB00B0FA38 /* newAccountViewController.swift */,
 				04B392D02DAE8FB5000AC2C3 /* CLCGrindsetApp */,
 				04B392E72DAE8FB7000AC2C3 /* CLCGrindsetAppTests */,
 				04B392F12DAE8FB7000AC2C3 /* CLCGrindsetAppUITests */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231A42982DB914FB00B0FA38 /* newAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

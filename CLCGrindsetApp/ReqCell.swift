@@ -17,6 +17,6 @@ class ReqCell: UITableViewCell {
     func customize(name: String, creditText: String)
     {
         classNameLabel.text = name
-        creditsLabel.text
+        creditsLabel.text = creditText
     }
 }
