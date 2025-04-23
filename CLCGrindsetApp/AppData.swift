@@ -6,8 +6,8 @@
 //
 
 import Foundation
+import FirebaseFirestore
 import FirebaseCore
-import FirebaseDatabase
 
 
 class AppData{
@@ -17,7 +17,11 @@ class AppData{
     
     static var studentSchedule = [String]()
     
-    static var ref: DatabaseReference!
+    static var ref: DocumentReference!
+    static var usernames = [String]()
+    static var passwords = [String]()
+    
+    
 
     
     

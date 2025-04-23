@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class loginViewController: UIViewController, UITextFieldDelegate {
 
@@ -20,13 +22,61 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usernameOutlet.delegate = self
         passwordOutlet.delegate = self
+        AppData.ref = Firestore.firestore().collection("data").document("Accounts")
+        
+        AppData.ref.addSnapshotListener { documentSnapshot, error in
+                guard let document = documentSnapshot else {
+                  print("Error fetching document: \(error!)")
+                  return
+                }
+                guard let data = document.data() else {
+                  print("Document data was empty.")
+                  return
+                }
+            
+            AppData.usernames.removeAll()
+            AppData.passwords.removeAll()
+            
+            for key in data.keys{
+                    let dataArray = data[key] as! [String : Any]
+//                    let uncodedAccount = Example(dict: dataArray)
+//                    AppData.usernames.append(uncodedAccount.Username)
+//                    AppData.passwords.append(uncodedAccount.Password)
+            }
+            
+            
+              }
 
         // Do any additional setup after loading the view.
     }
     
+
     
-    @IBAction func loginAction(_ sender: Any) {
+    @IBAction func submitAction(_ sender: Any) {
+        let enteredUsername = usernameOutlet.text!
+        let enteredPassword = passwordOutlet.text!
+        
+        var userFound = false
+        var userIndex = -1
+        for username in AppData.usernames{
+            if enteredUsername == username{
+                userFound = true
+                userIndex = AppData.usernames.firstIndex(of: enteredUsername) ?? -1
+                break
+            }
+        }
+        
+        if userFound && userIndex != -1{
+            if enteredPassword == AppData.passwords[userIndex]{
+                performSegue(withIdentifier: "loginSuccess", sender: self)
+            }
+        }
     }
+    
+    @IBAction func newAccountAction(_ sender: Any) {
+        performSegue(withIdentifier: "newAccount", sender: self)
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         usernameOutlet.resignFirstResponder(); passwordOutlet.resignFirstResponder();
