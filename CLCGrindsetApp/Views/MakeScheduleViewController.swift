@@ -2,6 +2,10 @@
 
 import UIKit
 
+class periodClicked {
+    static var selectedPeriod = 0
+}
+
 class MakeScheduleViewController: UIViewController {
     
     @IBOutlet weak var period1Class: UILabel!
@@ -25,38 +29,55 @@ class MakeScheduleViewController: UIViewController {
     
     @IBAction func edit1Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 1
     }
     
     @IBAction func edit2Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 2
+
     }
     
     @IBAction func edit3Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 3
+
     }
     
     @IBAction func edit4Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 4
+
     }
     
     @IBAction func edit5Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 5
+
     }
     
     @IBAction func edit6Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 6
+
     }
     
     @IBAction func edit7Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 7
+
     }
     
     @IBAction func edit8Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 8
+
     }
     
     @IBAction func edit9Action(_ sender: UIButton) {
         performSegue(withIdentifier: "showSubjects", sender: nil)
+        periodClicked.selectedPeriod = 9
+
     }
     
     /*override func viewDidAppear(_ animated: Bool) {
