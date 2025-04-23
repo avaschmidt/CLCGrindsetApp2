@@ -340,7 +340,7 @@
                     <navigationItem key="navigationItem" id="VuZ-p3-bPH"/>
                     <connections>
                         <outlet property="reqTableView" destination="Njb-uj-FBv" id="Bzn-Y9-3k1"/>
-                        <segue destination="ldM-09-lUH" kind="show" id="NiP-wr-PN3"/>
+                        <segue destination="ldM-09-lUH" kind="show" identifier="goReqType" id="NiP-wr-PN3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpR-lf-aw7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -470,7 +470,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sFP-U4-TGL"/>
                     <connections>
-                        <outlet property="tableviewOutlet" destination="ZYM-XU-UUn" id="Tmr-ry-pOJ"/>
+                        <outlet property="classesTableView" destination="ZYM-XU-UUn" id="74w-El-SYR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo2-ue-ffQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -868,7 +868,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-4d-quf">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-pr-1o5">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
@@ -963,7 +963,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-iC-hYJ">
-                                        <rect key="frame" x="0.0" y="496" width="393" height="219"/>
+                                        <rect key="frame" x="0.0" y="496" width="393" height="170"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -997,6 +997,9 @@
     <resources>
         <image name="lock" width="960" height="720"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
