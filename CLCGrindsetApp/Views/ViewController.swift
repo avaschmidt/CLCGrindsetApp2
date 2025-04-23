@@ -5,6 +5,10 @@
 //  Created by EVANGELINE NOFTZ on 4/15/25.
 //
 
+class subjectClicked{
+    static var subject: String = ""
+}
+
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
@@ -14,21 +18,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCoursesFromCSV()
 //        for i in 0..<courses.count{
 //            print(courses[i].courseName)
 //        }
         tableView.dataSource = self
         filteredCourses = allCourses
-        uniqueSubjects = Array(Set(allCourses.map { $0.subject })).sorted()
+        uniqueSubjects = Array(Set(allCourses.map{$0.subject})).sorted()
         tableView.reloadData()
 
-    }
-    
-    @IBAction func Sort(_ sender: UIButton) {
-//        filteredCourses = allCourses.filter { $0.subject == "Math" }
-        uniqueSubjects = Array(Set(allCourses.map { $0.subject }))
-        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +39,12 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        subjectClicked.subject = uniqueSubjects[indexPath.row]
+        performSegue(withIdentifier: "seeDetails", sender: nil)
+    }
+
+//    self.navigationController?.popViewController(animated: true)
 
 }
 
