@@ -13,7 +13,7 @@ class classClicked{
 
 }
 
-class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource {
+class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var currentSubjectClasses: [Course] = []
     @IBOutlet weak var tableView: UITableView!
@@ -22,6 +22,7 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         currentSubjectClasses = allCourses.filter { $0.subject == subjectClicked.subject }
         tableView.dataSource = self
+        tableView.delegate = self
 
                 
     }
@@ -31,9 +32,9 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource {
         }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SubjectsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath)
 //        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
-        cell.textLabel?.text = "\(currentSubjectClasses[indexPath.row])"
+        cell.textLabel?.text = "\(currentSubjectClasses[indexPath.row].courseID)\n\(String(currentSubjectClasses[indexPath.row].courseName))"
         return cell
     }
 
