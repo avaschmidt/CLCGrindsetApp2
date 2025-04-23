@@ -12,7 +12,7 @@ class StudentMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCoursesFromCSV()
-
+        classesTaken = allCourses
         // Do any additional setup after loading the view.
     }
     
