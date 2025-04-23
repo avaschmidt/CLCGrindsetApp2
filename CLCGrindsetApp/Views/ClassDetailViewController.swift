@@ -12,12 +12,19 @@ class ClassDetailViewController: UIViewController  {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var creditLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    
 
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = classClicked.cclass.courseName
+        subjectLabel.text = classClicked.cclass.subject
+        creditLabel.text = classClicked.cclass.credits
+        gradeLabel.text = "\(classClicked.cclass.eligibleGrades)"
+        textView.text = "\(classClicked.cclass.term)\n\(classClicked.cclass.description)"
     }
 
 }
