@@ -21,7 +21,7 @@ class AppData{
     static var usernames = [String]()
     static var passwords = [String]()
     
-    
+    static var currentStudent: Student!
 
     
     
