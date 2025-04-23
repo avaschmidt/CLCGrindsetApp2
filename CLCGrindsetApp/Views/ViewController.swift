@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         subjectClicked.subject = uniqueSubjects[indexPath.row]
-        performSegue(withIdentifier: "seeDetails", sender: nil)
+        performSegue(withIdentifier: "seeClasses", sender: nil)
     }
 
 //    self.navigationController?.popViewController(animated: true)

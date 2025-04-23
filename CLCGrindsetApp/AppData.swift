@@ -15,7 +15,7 @@ class AppData{
     
     static var courseToRate: Course?
     
-    static var studentSchedule = [String]()
+    static var studentSchedule = ["No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected"]
     
     static var ref: DocumentReference!
     static var usernames = [String]()
