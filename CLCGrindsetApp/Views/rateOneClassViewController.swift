@@ -9,7 +9,7 @@ import UIKit
 
 class ratingTableCell : UITableViewCell {
     
-    
+  
     
     @IBOutlet weak var RatingLabel: UILabel!
     
@@ -30,13 +30,14 @@ class ratingTableCell : UITableViewCell {
         }
         
         
-        func configureCell (text: String){
-            RatingLabel.text = text
-        }
+      
         
         
     }
     
+    func configureCell (text: String){
+        RatingLabel.text = text
+    }
     
 }
 
@@ -81,7 +82,7 @@ class rateOneClassViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ratingTabelCell", for: indexPath) as! ratingTableCell
-        
+        cell.configureCell(text: ratingCatagories[indexPath.row])
         
         
         return cell
@@ -96,6 +97,7 @@ class rateOneClassViewController: UIViewController, UITableViewDelegate, UITable
      // Pass the selected object to the new view controller.
      }
      */
+    
     
     
 }
