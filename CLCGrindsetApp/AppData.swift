@@ -22,6 +22,8 @@ class AppData{
     static var passwords = [String]()
     
     static var currentStudent: Student!
+    
+    static var reqType = -1
 
     
     
