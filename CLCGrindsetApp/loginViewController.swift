@@ -17,7 +17,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var passwordOutlet: UITextField!
     
-    
+    var students = [Student]()
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameOutlet.delegate = self
@@ -40,6 +40,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             for key in data.keys{
                     let dataArray = data[key] as! [String : Any]
                     let uncodedAccount = Student(dict: dataArray)
+                self.students.append(uncodedAccount)
                 AppData.usernames.append(uncodedAccount.username)
                 AppData.passwords.append(uncodedAccount.password)
             }
@@ -68,6 +69,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         
         if userFound && userIndex != -1{
             if enteredPassword == AppData.passwords[userIndex]{
+                AppData.currentStudent = students[userIndex]
                 performSegue(withIdentifier: "loginSuccess", sender: self)
             }
         }
