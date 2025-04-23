@@ -13,7 +13,7 @@ class ClassReqSpecificViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
         
-        var cell = classesTableView.dequeueReusableCell(withIdentifier: "ClassReqCell") as! ReqCell
+        var cell = classesTableView.dequeueReusableCell(withIdentifier: "ReqCell")! as! ReqCell
         
         cell.customize(name: sortedClasses[index].courseName, creditText: "\(sortedClasses[index].credits) credits")
         

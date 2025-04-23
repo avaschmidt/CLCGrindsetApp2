@@ -425,23 +425,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReqCell" rowHeight="100" id="xsm-cX-2Nb" customClass="ClassReqCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReqCell" rowHeight="100" id="SzY-3J-sO8" customClass="ReqCell" customModule="CLCGrindsetApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xsm-cX-2Nb" id="UHw-5K-gqr">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SzY-3J-sO8" id="6yA-r7-o9N">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Mw-Be-90C">
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryQ-UQ-GCa">
                                                     <rect key="frame" x="0.0" y="10" width="361" height="80"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Education" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-8x-FjD">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-NU-x0T">
                                                             <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="80"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5 credits required" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-HM-9dl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amt of credits here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayu-6W-S7C">
                                                             <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="80"/>
                                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
                                                             <nil key="textColor"/>
@@ -451,15 +451,15 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1Mw-Be-90C" firstAttribute="leading" secondItem="UHw-5K-gqr" secondAttribute="leading" id="LEW-aY-Y2r"/>
-                                                <constraint firstAttribute="trailing" secondItem="1Mw-Be-90C" secondAttribute="trailing" id="iR6-wy-QLl"/>
-                                                <constraint firstItem="1Mw-Be-90C" firstAttribute="top" secondItem="UHw-5K-gqr" secondAttribute="top" constant="10" id="yG7-JF-Jen"/>
-                                                <constraint firstAttribute="bottom" secondItem="1Mw-Be-90C" secondAttribute="bottom" constant="10" id="yYX-F5-US0"/>
+                                                <constraint firstItem="ryQ-UQ-GCa" firstAttribute="top" secondItem="6yA-r7-o9N" secondAttribute="top" constant="10" id="7OZ-6b-UDK"/>
+                                                <constraint firstAttribute="trailing" secondItem="ryQ-UQ-GCa" secondAttribute="trailing" id="Gub-WB-kzG"/>
+                                                <constraint firstItem="ryQ-UQ-GCa" firstAttribute="leading" secondItem="6yA-r7-o9N" secondAttribute="leading" id="JCY-KE-Yxz"/>
+                                                <constraint firstAttribute="bottom" secondItem="ryQ-UQ-GCa" secondAttribute="bottom" constant="10" id="ZBh-4Z-qId"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="classNameLabel" destination="uWJ-8x-FjD" id="64C-BS-Zc2"/>
-                                            <outlet property="creditsLabel" destination="Vd9-HM-9dl" id="nDF-yt-MID"/>
+                                            <outlet property="classNameLabel" destination="8xp-NU-x0T" id="Jgg-Zk-mx7"/>
+                                            <outlet property="creditsLabel" destination="Ayu-6W-S7C" id="XOn-h2-sbE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
