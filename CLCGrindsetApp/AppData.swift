@@ -6,8 +6,8 @@
 //
 
 import Foundation
+import FirebaseFirestore
 import FirebaseCore
-import FirebaseDatabase
 
 
 class AppData{
@@ -15,9 +15,13 @@ class AppData{
     
     static var courseToRate: Course?
     
-    static var studentSchedule = [String]()
+    static var studentSchedule = ["No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected", "No class selected"]
     
-    static var ref: DatabaseReference!
+    static var ref: DocumentReference!
+    static var usernames = [String]()
+    static var passwords = [String]()
+    
+    static var currentStudent: Student!
 
     
     

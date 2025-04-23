@@ -11,17 +11,18 @@ class subjectClicked{
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var uniqueSubjects: [String] = []
-
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        for i in 0..<courses.count{
 //            print(courses[i].courseName)
 //        }
         tableView.dataSource = self
+        tableView.delegate = self
         filteredCourses = allCourses
         uniqueSubjects = Array(Set(allCourses.map{$0.subject})).sorted()
         tableView.reloadData()
@@ -41,7 +42,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         subjectClicked.subject = uniqueSubjects[indexPath.row]
-        performSegue(withIdentifier: "seeDetails", sender: nil)
+        print("clicked")
+        performSegue(withIdentifier: "seeClasses", sender: nil)
     }
 
 //    self.navigationController?.popViewController(animated: true)
