@@ -279,7 +279,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-aM-R1J">
                                         <rect key="frame" x="0.0" y="421.00000000000006" width="393" height="210.66666666666669"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Edit My Classes">
+                                        <buttonConfiguration key="configuration" style="filled" title="Add A Class">
                                             <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
                                         </buttonConfiguration>
                                     </button>
