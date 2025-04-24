@@ -275,6 +275,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
                                             <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="T5w-l0-MlK" kind="show" id="ZOd-TB-zIU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-aM-R1J">
                                         <rect key="frame" x="0.0" y="421.00000000000006" width="393" height="210.66666666666669"/>
@@ -1167,6 +1170,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qg-N5-Ft0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1551.9083969465648" y="1659.8591549295775"/>
+        </scene>
+        <!--Edit Teach Profile View Controller-->
+        <scene sceneID="pOO-Lb-kOx">
+            <objects>
+                <viewController id="T5w-l0-MlK" customClass="EditTeachProfileViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AWh-4b-fYc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-Ln-aib">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-bd-S5I">
+                                <rect key="frame" x="10" y="10" width="393" height="210.66666666666652"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Acm-NF-2fe"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="Acm-NF-2fe" firstAttribute="bottom" secondItem="HHp-Ln-aib" secondAttribute="bottom" id="Ymf-Cn-0ev"/>
+                            <constraint firstItem="Acm-NF-2fe" firstAttribute="trailing" secondItem="HHp-Ln-aib" secondAttribute="trailing" id="d7z-XP-reO"/>
+                            <constraint firstItem="HHp-Ln-aib" firstAttribute="leading" secondItem="Acm-NF-2fe" secondAttribute="leading" id="fex-2J-cqm"/>
+                            <constraint firstItem="HHp-Ln-aib" firstAttribute="top" secondItem="Acm-NF-2fe" secondAttribute="top" id="gz3-Hx-eze"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wZa-GH-qJt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6T-pb-cvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4156" y="-1490"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
