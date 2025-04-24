@@ -252,6 +252,22 @@
             </objects>
             <point key="canvasLocation" x="1023.6641221374045" y="-723.23943661971839"/>
         </scene>
+        <!--Teacher Main View Controller-->
+        <scene sceneID="Yid-xK-bZQ">
+            <objects>
+                <viewController id="WI5-Ex-28d" customClass="TeacherMainViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdk-VH-NuO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JKd-Ag-jyK"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PJU-sM-XZy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8R-BH-sKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="-1470"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="w2Z-ki-VAv">
             <objects>
@@ -281,6 +297,9 @@
                                         <rect key="frame" x="0.0" y="506.66666666666657" width="393" height="217.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Teachers"/>
+                                        <connections>
+                                            <segue destination="WI5-Ex-28d" kind="show" id="3Bq-G0-qzr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1129,6 +1148,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
