@@ -95,25 +95,7 @@ class MakeScheduleViewController: UIViewController {
         period8Class.text = AppData.studentSchedule[7]
         period9Class.text = AppData.studentSchedule[8]
 
-        if clickedPeriod.period == 1 {
-            AppData.studentSchedule[0] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 2 {
-            AppData.studentSchedule[1] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 3 {
-            AppData.studentSchedule[2] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 4 {
-            AppData.studentSchedule[3] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 5 {
-            AppData.studentSchedule[4] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 6 {
-            AppData.studentSchedule[5] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 7 {
-            AppData.studentSchedule[6] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 8 {
-            AppData.studentSchedule[7] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 9 {
-            AppData.studentSchedule[8] = classClicked.cclass.courseName
-        }
+        
         
         period1Class.text = AppData.studentSchedule[0]
         period2Class.text = AppData.studentSchedule[1]
@@ -128,25 +110,7 @@ class MakeScheduleViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // use save changes for student class (avoid add to firebase)
-        if clickedPeriod.period == 1 {
-            AppData.studentSchedule[0] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 2 {
-            AppData.studentSchedule[1] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 3 {
-            AppData.studentSchedule[2] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 4 {
-            AppData.studentSchedule[3] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 5 {
-            AppData.studentSchedule[4] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 6 {
-            AppData.studentSchedule[5] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 7 {
-            AppData.studentSchedule[6] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 8 {
-            AppData.studentSchedule[7] = classClicked.cclass.courseName
-        } else if clickedPeriod.period == 9 {
-            AppData.studentSchedule[8] = classClicked.cclass.courseName
-        }
+       
             
         /*period1Class.text = AppData.studentSchedule[0]
         period2Class.text = AppData.studentSchedule[1]

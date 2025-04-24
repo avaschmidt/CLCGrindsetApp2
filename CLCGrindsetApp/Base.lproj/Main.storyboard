@@ -142,6 +142,120 @@
             </objects>
             <point key="canvasLocation" x="1023.6641221374045" y="-723.23943661971839"/>
         </scene>
+        <!--Teacher Create Class View Controller-->
+        <scene sceneID="UkV-AX-y4J">
+            <objects>
+                <viewController id="PlV-dQ-jMP" customClass="TeacherCreateClassViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFB-ip-z5V">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOT-6W-zbf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add A Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fp-eN-d78">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="66.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter courseID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQC-ab-Q25">
+                                        <rect key="frame" x="0.0" y="66.333333333333329" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Course Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXt-bD-zDa">
+                                        <rect key="frame" x="0.0" y="123.33333333333334" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number of Credits" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4av-RQ-mkd">
+                                        <rect key="frame" x="0.0" y="180.33333333333334" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwV-xP-drF">
+                                        <rect key="frame" x="0.0" y="237.33333333333329" width="393" height="56.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Term Offered" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pVw-kp-uxZ">
+                                        <rect key="frame" x="0.0" y="294" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Eligible Grades" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-dO-31c">
+                                        <rect key="frame" x="0.0" y="351" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Prerequisite" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niI-5e-iIo">
+                                        <rect key="frame" x="0.0" y="408" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Corequisite" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oUl-u0-5Pt">
+                                        <rect key="frame" x="0.0" y="465" width="393" height="56.666666666666629"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Enrollment Notes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-Ah-3ax">
+                                        <rect key="frame" x="0.0" y="521.66666666666663" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description of Class" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAv-rL-ARX">
+                                        <rect key="frame" x="0.0" y="578.66666666666663" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Is this class an elective?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSZ-R3-Y9O">
+                                        <rect key="frame" x="0.0" y="635.66666666666663" width="393" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSe-IB-Fsz">
+                                        <rect key="frame" x="0.0" y="692.66666666666663" width="393" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-ZM-TZx">
+                                        <rect key="frame" x="0.0" y="692.66666666666663" width="393" height="66.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Class"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="niI-5e-iIo" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="Ana-9Y-XvS"/>
+                                    <constraint firstItem="fAv-rL-ARX" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="D7Z-L4-9rG"/>
+                                    <constraint firstItem="oUl-u0-5Pt" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="ID9-FO-wEn"/>
+                                    <constraint firstItem="QGU-Ah-3ax" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="MuD-G2-lnN"/>
+                                    <constraint firstItem="XSZ-R3-Y9O" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="Yb1-kh-12A"/>
+                                    <constraint firstItem="NXt-bD-zDa" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="Ylf-iq-iK3"/>
+                                    <constraint firstItem="8fp-eN-d78" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.0875" id="ZNp-80-PLJ"/>
+                                    <constraint firstItem="WIf-dO-31c" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="bvv-KH-dZJ"/>
+                                    <constraint firstItem="xgd-ZM-TZx" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.0875" id="iaX-NF-s51"/>
+                                    <constraint firstItem="pVw-kp-uxZ" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="nyK-p7-gXV"/>
+                                    <constraint firstItem="wwV-xP-drF" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="sBu-GA-EHu"/>
+                                    <constraint firstItem="4av-RQ-mkd" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="vLy-Wp-q5u"/>
+                                    <constraint firstItem="oQC-ab-Q25" firstAttribute="height" secondItem="lOT-6W-zbf" secondAttribute="height" multiplier="0.075" id="yte-d6-sOd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CC8-f2-ze8"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="lOT-6W-zbf" firstAttribute="top" secondItem="CC8-f2-ze8" secondAttribute="top" id="FSr-lW-97W"/>
+                            <constraint firstItem="CC8-f2-ze8" firstAttribute="bottom" secondItem="lOT-6W-zbf" secondAttribute="bottom" id="Jt4-Ra-g5A"/>
+                            <constraint firstItem="CC8-f2-ze8" firstAttribute="trailing" secondItem="lOT-6W-zbf" secondAttribute="trailing" id="RQV-9z-TFt"/>
+                            <constraint firstItem="lOT-6W-zbf" firstAttribute="leading" secondItem="CC8-f2-ze8" secondAttribute="leading" id="tNR-EX-xFf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G97-rF-P6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2463" y="-1464"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="w2Z-ki-VAv">
             <objects>
@@ -996,6 +1110,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="RAH-eX-Exf"/>
         <segue reference="4LS-CX-lKQ"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1018,6 +1133,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
