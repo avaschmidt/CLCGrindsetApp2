@@ -74,7 +74,10 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             if enteredPassword == AppData.passwords[userIndex]{
                 AppData.currentStudent = students[userIndex]
                 performSegue(withIdentifier: "loginSuccess", sender: self)
+                createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
             }
+        }else{
+            createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
         }
     }
     
@@ -90,6 +93,12 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         usernameOutlet.resignFirstResponder(); passwordOutlet.resignFirstResponder();
         return true
     }
+    
+    func createAlert(alertTitle: String, alertDesc: String){
+            let alert = UIAlertController(title: alertTitle, message: alertDesc, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     
     /*
     // MARK: - Navigation
