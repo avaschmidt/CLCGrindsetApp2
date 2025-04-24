@@ -25,7 +25,7 @@ struct Course {
     var isElective: String
     var courseType: String
     
-    var rank: Double
+    var rank: [Double]
     var rankCount: Int
 }
 
@@ -66,7 +66,7 @@ func loadCoursesFromCSV() {
                 description: columns[9],
                 isElective: columns[10],
                 courseType: columns[11],
-                rank: 0,
+                rank: [0, 0, 0, 0],
                 rankCount: 0
             )
             allCourses.append(course)
