@@ -141,6 +141,7 @@
                         <viewLayoutGuide key="safeArea" id="uuh-yq-5zS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UB7-Fl-uO9"/>
                     <connections>
                         <outlet property="passwordOutlet" destination="HYp-rj-B7o" id="K03-4U-U7R"/>
                         <outlet property="usernameOutlet" destination="Lor-FS-8HP" id="aCy-iC-pZK"/>
@@ -157,7 +158,7 @@
             <objects>
                 <viewController id="42K-E9-l5s" customClass="newAccountViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RKq-HC-V7K">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create New Account!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yt-8l-Nr5">
@@ -202,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="2062" y="-1674"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="T80-80-0ee">
             <objects>
-                <viewController id="eYY-di-bwn" sceneMemberID="viewController">
+                <viewController id="eYY-di-bwn" customClass="firstViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0A4-1q-m3L">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +228,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Click To Lock In"/>
                                         <connections>
-                                            <segue destination="qHd-Ig-Mrz" kind="show" id="kA8-nn-P0Z"/>
+                                            <action selector="lockInAction:" destination="eYY-di-bwn" eventType="touchUpInside" id="JP7-TZ-6I7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -247,6 +248,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pYI-ft-ZpE"/>
+                    <connections>
+                        <segue destination="tax-hr-RCX" kind="show" identifier="toLogin" id="YBA-PT-D7G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHi-YV-vCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,30 +261,30 @@
             <objects>
                 <viewController id="WI5-Ex-28d" customClass="TeacherMainViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdk-VH-NuO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dZq-ST-wCd">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="162" width="393" height="622"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-Ov-ztd">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="178.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="155.66666666666666"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-AD-ZaI">
-                                        <rect key="frame" x="0.0" y="178.66666666666669" width="393" height="179"/>
+                                        <rect key="frame" x="0.0" y="155.66666666666669" width="393" height="155.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Edit Profile"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-aM-R1J">
-                                        <rect key="frame" x="0.0" y="357.66666666666669" width="393" height="178.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="311" width="393" height="155.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Edit My Classes"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRs-aK-wjc">
-                                        <rect key="frame" x="0.0" y="536.33333333333337" width="393" height="178.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="466.66666666666657" width="393" height="155.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="View Ranks"/>
                                     </button>
@@ -312,20 +316,20 @@
             <objects>
                 <viewController id="qHd-Ig-Mrz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZA-Eu-FuW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R1m-nF-d8l">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="162" width="393" height="622"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are You A..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-sh-WBf">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="362"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="311"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXV-gQ-5Jc">
-                                        <rect key="frame" x="0.0" y="362" width="393" height="144.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="311" width="393" height="124.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Students"/>
                                         <connections>
@@ -333,7 +337,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-14-DXN">
-                                        <rect key="frame" x="0.0" y="506.66666666666657" width="393" height="217.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="435.33333333333343" width="393" height="186.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Teachers"/>
                                         <connections>
@@ -367,20 +371,20 @@
             <objects>
                 <viewController id="ZSD-qO-Mkg" customClass="StudentMenuViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vgw-Gq-OvQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qHh-ja-AMH">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="162" width="393" height="622"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLC GRINDSET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAa-I0-ibZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="144.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="124.33333333333333"/>
                                         <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGX-Jy-waT">
-                                        <rect key="frame" x="0.0" y="144.66666666666666" width="393" height="144.99999999999997"/>
+                                        <rect key="frame" x="0.0" y="124.33333333333331" width="393" height="124.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="View Ranks">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
@@ -390,7 +394,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vZ-is-kRi">
-                                        <rect key="frame" x="0.0" y="289.66666666666669" width="393" height="144.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="248.66666666666666" width="393" height="124.66666666666666"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Build Schedule">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
@@ -400,7 +404,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJr-Ex-MPo">
-                                        <rect key="frame" x="0.0" y="434.33333333333331" width="393" height="144.99999999999994"/>
+                                        <rect key="frame" x="0.0" y="373.33333333333337" width="393" height="124.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Your Courses">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
@@ -410,7 +414,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38K-Oa-Q8Q">
-                                        <rect key="frame" x="0.0" y="579.33333333333337" width="393" height="144.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="497.66666666666657" width="393" height="124.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Graduation Requirements" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
@@ -449,7 +453,7 @@
             <objects>
                 <viewController id="j4d-Nh-PY4" customClass="GradReqViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ust-f2-ylB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9X-Ws-BGp">
@@ -586,7 +590,7 @@
             <objects>
                 <viewController id="ldM-09-lUH" customClass="ClassReqSpecificViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x0m-vx-XqW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZYM-XU-UUn">
@@ -980,14 +984,14 @@
             <objects>
                 <viewController id="Kss-bR-r9J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dl9-MM-hzZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HRB-o3-Sei">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="162" width="393" height="622"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current courses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmq-UV-cZn">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="724"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="622"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1165,7 +1169,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="4LS-CX-lKQ"/>
-        <segue reference="afl-aS-dz7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="lock" width="960" height="720"/>
