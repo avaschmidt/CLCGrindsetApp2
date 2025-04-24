@@ -95,9 +95,8 @@ class MakeScheduleViewController: UIViewController {
         period8Class.text = AppData.studentSchedule[7]
         period9Class.text = AppData.studentSchedule[8]
 
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        
+        
         period1Class.text = AppData.studentSchedule[0]
         period2Class.text = AppData.studentSchedule[1]
         period3Class.text = AppData.studentSchedule[2]
@@ -107,6 +106,21 @@ class MakeScheduleViewController: UIViewController {
         period7Class.text = AppData.studentSchedule[6]
         period8Class.text = AppData.studentSchedule[7]
         period9Class.text = AppData.studentSchedule[8]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // use save changes for student class (avoid add to firebase)
+       
+            
+        /*period1Class.text = AppData.studentSchedule[0]
+        period2Class.text = AppData.studentSchedule[1]
+        period3Class.text = AppData.studentSchedule[2]
+        period4Class.text = AppData.studentSchedule[3]
+        period5Class.text = AppData.studentSchedule[4]
+        period6Class.text = AppData.studentSchedule[5]
+        period7Class.text = AppData.studentSchedule[6]
+        period8Class.text = AppData.studentSchedule[7]
+        period9Class.text = AppData.studentSchedule[8]*/
         
         
     }
