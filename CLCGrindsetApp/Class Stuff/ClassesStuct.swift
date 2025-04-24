@@ -28,7 +28,7 @@ struct Course {
 
 
 func loadCoursesFromCSV() {
-    guard let filePath = Bundle.main.path(forResource: "Classes", ofType: "csv") else {
+    guard let filePath = Bundle.main.path(forResource: "Classes", ofType: "tsv") else {
         print("CSV file not found")
         return
     }
@@ -39,9 +39,13 @@ func loadCoursesFromCSV() {
         rows.removeFirst()
 
         for (index, row) in rows.enumerated() {
-            let columns = row.components(separatedBy: ",")
+            let columns = row.components(separatedBy: "\t")
 
             if columns.count < 12 {
+                print("Skipping row \(index + 2): expected 12 columns, got \(columns.count)")
+                continue
+            }
+            if columns.count > 12 {
                 print("Skipping row \(index + 2): expected 12 columns, got \(columns.count)")
                 continue
             }

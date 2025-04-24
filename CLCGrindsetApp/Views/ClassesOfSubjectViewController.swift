@@ -36,14 +36,14 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath)
 //        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
-        cell.textLabel?.text = "\(currentSubjectClasses[indexPath.row].courseID)\(String(currentSubjectClasses[indexPath.row].courseName))"
+        cell.textLabel?.text = "\(currentSubjectClasses[indexPath.row].courseID)\t\(String(currentSubjectClasses[indexPath.row].courseName))"
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         classClicked.cclass = currentSubjectClasses[indexPath.row]
-        //performSegue(withIdentifier: "seeDetails", sender: nil)
-        performSegue(withIdentifier: "backToSchedule", sender: nil)
+        performSegue(withIdentifier: "seeDetails", sender: nil)
+//        performSegue(withIdentifier: "backToSchedule", sender: nil)
         
         print(currentSubjectClasses[indexPath.row].courseName)
         classClicked.selectedClass = currentSubjectClasses[indexPath.row].courseName
