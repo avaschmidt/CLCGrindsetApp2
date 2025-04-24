@@ -1199,6 +1199,9 @@
                                         <rect key="frame" x="0.0" y="421" width="393" height="421"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Enter"/>
+                                        <connections>
+                                            <action selector="enterAction:" destination="T5w-l0-MlK" eventType="touchUpInside" id="4pN-gQ-Vft"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1217,6 +1220,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wZa-GH-qJt"/>
+                    <connections>
+                        <outlet property="teacherNameOutlet" destination="ehq-ih-hr8" id="Xxr-DT-0VC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6T-pb-cvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
