@@ -1183,14 +1183,32 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-Ln-aib">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-bd-S5I">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="210.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="53"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-ih-hr8">
+                                        <rect key="frame" x="0.0" y="210.66666666666663" width="393" height="210.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cc-gE-aIm">
+                                        <rect key="frame" x="0.0" y="421" width="393" height="421"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Enter"/>
+                                        <connections>
+                                            <action selector="enterAction:" destination="T5w-l0-MlK" eventType="touchUpInside" id="4pN-gQ-Vft"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4fm-bd-S5I" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.25" id="pQx-58-kF3"/>
+                                    <constraint firstItem="ehq-ih-hr8" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.25" id="uU1-1D-RiI"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-bd-S5I">
-                                <rect key="frame" x="10" y="10" width="393" height="210.66666666666652"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="53"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Acm-NF-2fe"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1202,10 +1220,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wZa-GH-qJt"/>
+                    <connections>
+                        <outlet property="teacherNameOutlet" destination="ehq-ih-hr8" id="Xxr-DT-0VC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6T-pb-cvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4156" y="-1490"/>
+            <point key="canvasLocation" x="4106" y="-2100"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
