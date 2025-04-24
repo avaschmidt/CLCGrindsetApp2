@@ -41,7 +41,7 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
             newStudent.addToFirebase(docRef: AppData.ref)
             AppData.currentStudent = newStudent
             
-            performSegue(withIdentifier: "performSuccess", sender: self)
+            performSegue(withIdentifier: "createSuccess", sender: self)
             
         }else{
             createAlert(alertTitle: "Error", alertDesc: "Username already exists.")
