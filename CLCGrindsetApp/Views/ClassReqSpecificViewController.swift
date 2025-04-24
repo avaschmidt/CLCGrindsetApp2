@@ -19,6 +19,11 @@ class ClassReqSpecificViewController: UIViewController, UITableViewDelegate, UIT
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        classClicked.cclass = sortedClasses[indexPath.row]
+        //performSegue(withIdentifier: "seeDetails", sender: nil)
+        performSegue(withIdentifier: "reqClassDetails", sender: nil)
+    }
     
     let classes = ["English", "Mathematics", "Science", "Computer science", "Drivers Ed", "Consumer Ed", "PE / Gym", "Social Science", "Electives"]
     

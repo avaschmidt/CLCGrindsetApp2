@@ -12,7 +12,9 @@ import FirebaseFirestore
 class loginViewController: UIViewController, UITextFieldDelegate {
 
     
+    
     @IBOutlet weak var usernameOutlet: UITextField!
+    
     
     
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -52,8 +54,9 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    
     @IBAction func submitAction(_ sender: Any) {
+    
+    
         let enteredUsername = usernameOutlet.text!
         let enteredPassword = passwordOutlet.text!
         
@@ -71,12 +74,18 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             if enteredPassword == AppData.passwords[userIndex]{
                 AppData.currentStudent = students[userIndex]
                 performSegue(withIdentifier: "loginSuccess", sender: self)
+                createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
             }
+        }else{
+            createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
         }
     }
     
+    
+    
+    
     @IBAction func newAccountAction(_ sender: Any) {
-        performSegue(withIdentifier: "newAccount", sender: self)
+    performSegue(withIdentifier: "newAccount", sender: self)
     }
     
     
@@ -84,6 +93,12 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         usernameOutlet.resignFirstResponder(); passwordOutlet.resignFirstResponder();
         return true
     }
+    
+    func createAlert(alertTitle: String, alertDesc: String){
+            let alert = UIAlertController(title: alertTitle, message: alertDesc, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     
     /*
     // MARK: - Navigation
