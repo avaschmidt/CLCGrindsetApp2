@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" id="Zi7-Q2-Cx5"/>
                     <connections>
                         <outlet property="tableView" destination="pwb-v5-xNp" id="WKC-q4-kLS"/>
-                        <segue destination="oUg-fG-f0q" kind="show" id="O4C-Y0-shr"/>
+                        <segue destination="oUg-fG-f0q" kind="show" identifier="seeClasses" id="O4C-Y0-shr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,6 +85,7 @@
                     <navigationItem key="navigationItem" id="FRb-NY-nxI"/>
                     <connections>
                         <outlet property="tableView" destination="U6x-TD-C9D" id="Xzg-6v-Gxf"/>
+                        <segue destination="xlT-5S-1GO" kind="show" identifier="seeDetails" id="Bgi-UG-70P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-gr-bF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -968,6 +969,9 @@
     <resources>
         <image name="lock" width="960" height="720"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
