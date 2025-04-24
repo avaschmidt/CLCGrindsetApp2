@@ -149,8 +149,47 @@
                     <view key="view" contentMode="scaleToFill" id="gdk-VH-NuO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dZq-ST-wCd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-Ov-ztd">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="178.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-AD-ZaI">
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="393" height="179"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Edit Profile"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-aM-R1J">
+                                        <rect key="frame" x="0.0" y="357.66666666666669" width="393" height="178.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Edit My Classes"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRs-aK-wjc">
+                                        <rect key="frame" x="0.0" y="536.33333333333337" width="393" height="178.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="View Ranks"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Frb-aM-R1J" firstAttribute="height" secondItem="dZq-ST-wCd" secondAttribute="height" multiplier="0.25" id="Uue-nb-e58"/>
+                                    <constraint firstItem="jQk-Ov-ztd" firstAttribute="height" secondItem="dZq-ST-wCd" secondAttribute="height" multiplier="0.25" id="Z16-Uy-HQx"/>
+                                    <constraint firstItem="edu-AD-ZaI" firstAttribute="height" secondItem="dZq-ST-wCd" secondAttribute="height" multiplier="0.25" id="n7Y-OP-qGz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JKd-Ag-jyK"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="JKd-Ag-jyK" firstAttribute="trailing" secondItem="dZq-ST-wCd" secondAttribute="trailing" id="2AG-mA-6WP"/>
+                            <constraint firstItem="JKd-Ag-jyK" firstAttribute="bottom" secondItem="dZq-ST-wCd" secondAttribute="bottom" id="MhZ-vu-3hW"/>
+                            <constraint firstItem="dZq-ST-wCd" firstAttribute="leading" secondItem="JKd-Ag-jyK" secondAttribute="leading" id="TuL-CO-SMC"/>
+                            <constraint firstItem="dZq-ST-wCd" firstAttribute="top" secondItem="JKd-Ag-jyK" secondAttribute="top" id="UQq-2R-sWO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PJU-sM-XZy"/>
                 </viewController>
