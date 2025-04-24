@@ -86,7 +86,6 @@
                     <connections>
                         <outlet property="tableView" destination="U6x-TD-C9D" id="Xzg-6v-Gxf"/>
                         <segue destination="mU0-VZ-U4F" kind="show" identifier="backToSchedule" id="4LS-CX-lKQ"/>
-                        <segue destination="xlT-5S-1GO" kind="show" identifier="seeDetails" id="MAo-V2-qDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-gr-bF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -266,24 +265,30 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-Ov-ztd">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="210.66666666666666"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="53"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-AD-ZaI">
                                         <rect key="frame" x="0.0" y="210.66666666666663" width="393" height="210.33333333333337"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Edit Profile"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-aM-R1J">
                                         <rect key="frame" x="0.0" y="421.00000000000006" width="393" height="210.66666666666669"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Edit My Classes"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add A Class">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRs-aK-wjc">
                                         <rect key="frame" x="0.0" y="631.66666666666663" width="393" height="210.33333333333337"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="View Ranks"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="View Ranks">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -306,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8R-BH-sKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="-1470"/>
+            <point key="canvasLocation" x="3323" y="-1490"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w2Z-ki-VAv">
@@ -1034,11 +1039,11 @@
             <objects>
                 <viewController id="xlT-5S-1GO" customClass="ClassDetailViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ykp-hJ-fqd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-4d-quf">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-pr-1o5">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
@@ -1133,7 +1138,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-iC-hYJ">
-                                        <rect key="frame" x="0.0" y="496" width="393" height="346"/>
+                                        <rect key="frame" x="0.0" y="496" width="393" height="263"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
