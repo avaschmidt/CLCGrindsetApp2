@@ -7,7 +7,7 @@
 
 import UIKit
 
-class newAccountViewController: UIViewController {
+class newAccountViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var userNameOutlet: UITextField!
@@ -18,6 +18,8 @@ class newAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameOutlet.delegate = self
+        passwordOutlet.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -38,10 +40,21 @@ class newAccountViewController: UIViewController {
             var newStudent = Student(username: username, password: password, gradeLevel: 0, selectedClasses: [String](), name: username, age: 0)
             newStudent.addToFirebase(docRef: AppData.ref)
         }else{
-            print("User has been already added.")
+            createAlert(alertTitle: "Error", alertDesc: "Username already exists.")
         }
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userNameOutlet.resignFirstResponder(); passwordOutlet.resignFirstResponder();
+        return true
+    }
+    
+    func createAlert(alertTitle: String, alertDesc: String){
+            let alert = UIAlertController(title: alertTitle, message: alertDesc, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     
     /*
     // MARK: - Navigation
