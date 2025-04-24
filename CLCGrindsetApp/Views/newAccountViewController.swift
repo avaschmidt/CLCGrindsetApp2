@@ -9,17 +9,22 @@ import UIKit
 
 class newAccountViewController: UIViewController {
 
+    
     @IBOutlet weak var userNameOutlet: UITextField!
     
+    
+    
     @IBOutlet weak var passwordOutlet: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func createAction(_ sender: Any) {
-        var username = userNameOutlet.text!
+    var username = userNameOutlet.text!
         var password = passwordOutlet.text!
         var userFound = false
         for usernameHi in AppData.usernames{

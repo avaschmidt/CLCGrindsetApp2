@@ -25,6 +25,11 @@ class GradReqViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goReqType", sender: self)
+        AppData.reqType = indexPath.row
+    }
+    
 
     let classes = ["English", "Mathematics", "Science", "Computer science", "Drivers Ed", "Consumer Ed", "PE / Gym", "Social Science", "Electives"]
     
@@ -33,6 +38,7 @@ class GradReqViewController: UIViewController, UITableViewDataSource, UITableVie
     let creditReqs = [4.0, 3.0, 2.0, 1.0, 0.5, 0.25, 2.25, 2.0, 4.0]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         reqTableView.delegate = self
         reqTableView.dataSource = self
