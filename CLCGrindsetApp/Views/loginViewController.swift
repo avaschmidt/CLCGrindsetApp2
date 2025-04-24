@@ -74,6 +74,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             if enteredPassword == AppData.passwords[userIndex]{
                 AppData.currentStudent = students[userIndex]
                 performSegue(withIdentifier: "loginSuccess", sender: self)
+            }else{
                 createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
             }
         }else{
