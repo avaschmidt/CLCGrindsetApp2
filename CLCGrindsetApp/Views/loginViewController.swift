@@ -14,10 +14,10 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var usernameOutlet: UITextField!
-    
-    
-    
     @IBOutlet weak var passwordOutlet: UITextField!
+    
+    
+    
     
     var students = [Student]()
     override func viewDidLoad() {
