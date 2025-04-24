@@ -86,7 +86,7 @@
                     <connections>
                         <outlet property="tableView" destination="U6x-TD-C9D" id="Xzg-6v-Gxf"/>
                         <segue destination="mU0-VZ-U4F" kind="show" identifier="backToSchedule" id="4LS-CX-lKQ"/>
-                        <segue destination="xlT-5S-1GO" kind="show" id="MAo-V2-qDs"/>
+                        <segue destination="xlT-5S-1GO" kind="show" identifier="seeDetails" id="MAo-V2-qDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-gr-bF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
