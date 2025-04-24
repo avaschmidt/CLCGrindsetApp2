@@ -143,6 +143,22 @@
             <point key="canvasLocation" x="1023.6641221374045" y="-723.23943661971839"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Yid-xK-bZQ">
+            <objects>
+                <viewController id="WI5-Ex-28d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdk-VH-NuO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JKd-Ag-jyK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PJU-sM-XZy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8R-BH-sKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="-1470"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="w2Z-ki-VAv">
             <objects>
                 <viewController id="qHd-Ig-Mrz" sceneMemberID="viewController">
@@ -171,6 +187,9 @@
                                         <rect key="frame" x="0.0" y="500.66666666666657" width="393" height="214.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Teachers"/>
+                                        <connections>
+                                            <segue destination="WI5-Ex-28d" kind="show" id="3Bq-G0-qzr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -996,6 +1015,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="RAH-eX-Exf"/>
         <segue reference="4LS-CX-lKQ"/>
     </inferredMetricsTieBreakers>
     <resources>
