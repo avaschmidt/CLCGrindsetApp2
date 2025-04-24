@@ -26,5 +26,10 @@ class ClassDetailViewController: UIViewController  {
         gradeLabel.text = "\(classClicked.cclass.eligibleGrades)"
         textView.text = "\(classClicked.cclass.term)\n\(classClicked.cclass.description)"
     }
-
+    @IBAction func addToSchedule(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
