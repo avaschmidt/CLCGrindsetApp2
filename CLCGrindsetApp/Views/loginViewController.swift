@@ -12,7 +12,9 @@ import FirebaseFirestore
 class loginViewController: UIViewController, UITextFieldDelegate {
 
     
+    
     @IBOutlet weak var usernameOutlet: UITextField!
+    
     
     
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -52,8 +54,9 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    
     @IBAction func submitAction(_ sender: Any) {
+    
+    
         let enteredUsername = usernameOutlet.text!
         let enteredPassword = passwordOutlet.text!
         
@@ -75,8 +78,11 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    
+    
     @IBAction func newAccountAction(_ sender: Any) {
-        performSegue(withIdentifier: "newAccount", sender: self)
+    performSegue(withIdentifier: "newAccount", sender: self)
     }
     
     
