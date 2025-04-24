@@ -1232,6 +1232,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wZa-GH-qJt"/>
                     <connections>
+                        <outlet property="bioOutlet" destination="W4H-wn-uOl" id="kPU-EU-F1K"/>
                         <outlet property="teacherNameOutlet" destination="ehq-ih-hr8" id="Xxr-DT-0VC"/>
                     </connections>
                 </viewController>

@@ -24,6 +24,8 @@ class AppData{
     static var currentStudent: Student!
     
     static var reqType = -1
+    
+    static var bio = ""
 
     
     

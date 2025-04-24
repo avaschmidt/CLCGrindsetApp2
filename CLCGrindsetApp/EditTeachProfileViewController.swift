@@ -8,7 +8,10 @@
 import UIKit
 
 class EditTeachProfileViewController: UIViewController {
+    
+    @IBOutlet weak var bioOutlet: UITextField!
     @IBOutlet weak var teacherNameOutlet: UITextField!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,12 @@ class EditTeachProfileViewController: UIViewController {
             print("No name inputed")
         }
         
+        if bioOutlet.text != ""{
+            AppData.bio = bioOutlet.text!
+        }
+        else{
+            AppData.bio = "Teacher Has Not Added A Bio Yet!"
+        }
     }
   
     
