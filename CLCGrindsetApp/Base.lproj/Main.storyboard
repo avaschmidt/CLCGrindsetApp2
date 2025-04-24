@@ -257,7 +257,7 @@
             <objects>
                 <viewController id="WI5-Ex-28d" customClass="TeacherMainViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdk-VH-NuO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="JKd-Ag-jyK"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
