@@ -24,7 +24,7 @@ class ClassDetailViewController: UIViewController  {
         subjectLabel.text = classClicked.cclass.subject
         creditLabel.text = classClicked.cclass.credits
         gradeLabel.text = "\(classClicked.cclass.eligibleGrades)"
-        textView.text = "\(classClicked.cclass.term)\n\(classClicked.cclass.description)"
+        textView.text = "•Required Classes: \(classClicked.cclass.prerequisite)\n•\(classClicked.cclass.term)\n•\(classClicked.cclass.description)\n•\(classClicked.cclass.enrollmentNotes)"
     }
     @IBAction func addToSchedule(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
