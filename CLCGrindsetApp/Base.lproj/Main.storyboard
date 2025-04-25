@@ -1326,18 +1326,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-ih-hr8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yq4-lM-JS5">
                                         <rect key="frame" x="0.0" y="178.66666666666669" width="393" height="71.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="View My Profile"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-ih-hr8">
+                                        <rect key="frame" x="0.0" y="250.33333333333334" width="393" height="71.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Information To Your Bio" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-wn-uOl">
-                                        <rect key="frame" x="0.0" y="250.33333333333334" width="393" height="357.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="321.66666666666669" width="393" height="322.00000000000006"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cc-gE-aIm">
-                                        <rect key="frame" x="0.0" y="607.66666666666663" width="393" height="107.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="643.66666666666663" width="393" height="71.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Enter"/>
                                         <connections>
@@ -1346,7 +1351,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="W4H-wn-uOl" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.5" id="1IO-5t-1Pj"/>
+                                    <constraint firstItem="W4H-wn-uOl" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.45" id="1IO-5t-1Pj"/>
+                                    <constraint firstItem="Yq4-lM-JS5" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.1" id="kTc-7Z-Vcf"/>
                                     <constraint firstItem="4fm-bd-S5I" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.25" id="pQx-58-kF3"/>
                                     <constraint firstItem="ehq-ih-hr8" firstAttribute="height" secondItem="HHp-Ln-aib" secondAttribute="height" multiplier="0.1" id="uU1-1D-RiI"/>
                                 </constraints>
