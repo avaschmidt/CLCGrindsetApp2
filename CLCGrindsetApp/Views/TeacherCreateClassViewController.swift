@@ -57,7 +57,8 @@ class TeacherCreateClassViewController: UIViewController {
         var elective = electiveInput.text
         var courseType = courseTypeInput.text
         
-        
+        //var course = Course(courseID: courseID, courseName: courseName, credits: credits, subject: subject, term: term, eligibleGrades: grades, prerequisite: prerequisites, corequisite: corerequisites, enrollmentNotes: enrollmentNotes, description: description, isElective: elective, courseType: courseType, rank: 0, rankCount: 0)
+        //allCourses.append(course)
     }
     
 
