@@ -81,7 +81,7 @@ class rateOneClassViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ratingTabelCell", for: indexPath) as! ratingTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ratingTableCell", for: indexPath) as! ratingTableCell
         cell.configureCell(text: ratingCatagories[indexPath.row])
         
         
