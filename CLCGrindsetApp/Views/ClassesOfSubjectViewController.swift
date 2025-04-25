@@ -7,7 +7,7 @@
 
 import UIKit
 
-class classClicked{
+class classClicked: UITableViewCell{
     static var cclass: Course = Course(courseID: "",courseName: "",credits: "",subject: "",term: "",eligibleGrades: "",prerequisite: "",corequisite: "",enrollmentNotes: "",description: "",isElective: "",courseType: "", rank: [0, 0, 0, 0], rankCount: 0
     )
     
@@ -34,9 +34,8 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource, U
         }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath)
-//        cell.textLabel?.text = "\(course.subject) - \(course.courseName)"
-        cell.textLabel?.text = "\(currentSubjectClasses[indexPath.row].courseID)\t\(String(currentSubjectClasses[indexPath.row].courseName))"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath) as! ClassCell
+        cell.con(name: currentSubjectClasses[indexPath.row].courseName, id: currentSubjectClasses[indexPath.row].courseID)
         return cell
     }
 
