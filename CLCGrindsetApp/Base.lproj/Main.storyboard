@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pwb-v5-xNp">
-                                <rect key="frame" x="0.0" y="100" width="393" height="618"/>
+                                <rect key="frame" x="0.0" y="100" width="393" height="642"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubjectsCell" id="Mhl-FS-xNE">
@@ -55,11 +55,11 @@
             <objects>
                 <viewController id="oUg-fG-f0q" customClass="ClassesOfSubjectViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nj5-Ok-Oye">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U6x-TD-C9D">
-                                <rect key="frame" x="0.0" y="100" width="393" height="618"/>
+                                <rect key="frame" x="0.0" y="100" width="393" height="642"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassesCell" id="qZs-TA-5Hn">
@@ -291,6 +291,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Add A Class">
                                             <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ckW-Nd-Ie5" kind="show" id="U6U-e8-3eb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRs-aK-wjc">
                                         <rect key="frame" x="0.0" y="536.33333333333337" width="393" height="178.66666666666663"/>
@@ -741,74 +744,74 @@
             <objects>
                 <viewController id="mU0-VZ-U4F" customClass="MakeScheduleViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pb3-zm-2JK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7YP-gZ-ziv">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-g2-Srw">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="71.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="84.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bb-Ry-Vys">
-                                        <rect key="frame" x="0.0" y="71.666666666666686" width="393" height="643.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="84.333333333333314" width="393" height="757.66666666666674"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-uO-vLs">
-                                                <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="643.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="757.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Yc-jZt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="71.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-Yg-Ml9">
-                                                        <rect key="frame" x="0.0" y="71.333333333333343" width="39.333333333333336" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="84.000000000000028" width="39.333333333333336" height="84.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmZ-ta-xdM">
-                                                        <rect key="frame" x="0.0" y="143.00000000000003" width="39.333333333333336" height="71.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="168.33333333333331" width="39.333333333333336" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6C-WS-aEh">
-                                                        <rect key="frame" x="0.0" y="214.33333333333334" width="39.333333333333336" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="252.3333333333334" width="39.333333333333336" height="84.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-SS-ad6">
-                                                        <rect key="frame" x="0.0" y="286" width="39.333333333333336" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="336.66666666666669" width="39.333333333333336" height="84.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35z-2Z-CjU">
-                                                        <rect key="frame" x="0.0" y="357.33333333333337" width="39.333333333333336" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="421" width="39.333333333333336" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6J-Al-sIn">
-                                                        <rect key="frame" x="0.0" y="429" width="39.333333333333336" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="505.00000000000006" width="39.333333333333336" height="84.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1R-6A-Uib">
-                                                        <rect key="frame" x="0.0" y="500.33333333333343" width="39.333333333333336" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="589.33333333333326" width="39.333333333333336" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  P9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuI-Nc-u7J">
-                                                        <rect key="frame" x="0.0" y="572" width="39.333333333333336" height="71.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="673.33333333333326" width="39.333333333333336" height="84.333333333333371"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -816,58 +819,58 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-uz-fb6">
-                                                <rect key="frame" x="39.333333333333343" y="0.0" width="275" height="643.33333333333337"/>
+                                                <rect key="frame" x="39.333333333333343" y="0.0" width="275" height="757.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-TH-oVV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="71.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-Qw-DBT">
-                                                        <rect key="frame" x="0.0" y="71.333333333333343" width="275" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="84.000000000000028" width="275" height="84.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8y-oh-gyg">
-                                                        <rect key="frame" x="0.0" y="143.00000000000003" width="275" height="71.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="168.33333333333331" width="275" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-nZ-a4p">
-                                                        <rect key="frame" x="0.0" y="214.33333333333334" width="275" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="252.3333333333334" width="275" height="84.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhR-ZN-yt6">
-                                                        <rect key="frame" x="0.0" y="286" width="275" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="336.66666666666669" width="275" height="84.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VO-MZ-UoI">
-                                                        <rect key="frame" x="0.0" y="357.33333333333337" width="275" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="421" width="275" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trP-2v-PfD">
-                                                        <rect key="frame" x="0.0" y="429" width="275" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="505.00000000000006" width="275" height="84.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-hv-ADu">
-                                                        <rect key="frame" x="0.0" y="500.33333333333343" width="275" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="589.33333333333326" width="275" height="84"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No class added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jG4-zO-pn2">
-                                                        <rect key="frame" x="0.0" y="572" width="275" height="71.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="673.33333333333326" width="275" height="84.333333333333371"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -875,10 +878,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LyO-ee-eX5">
-                                                <rect key="frame" x="314.33333333333331" y="0.0" width="78.666666666666686" height="643.33333333333337"/>
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="78.666666666666686" height="757.66666666666663"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0H-p5-9dg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="71.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="84"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -886,7 +889,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-vm-Fhi">
-                                                        <rect key="frame" x="0.0" y="71.333333333333343" width="78.666666666666671" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="84.000000000000028" width="78.666666666666671" height="84.333333333333343"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -894,7 +897,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmX-rR-oNz">
-                                                        <rect key="frame" x="0.0" y="143.00000000000003" width="78.666666666666671" height="71.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="168.33333333333331" width="78.666666666666671" height="84"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -902,7 +905,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovJ-W9-U3r">
-                                                        <rect key="frame" x="0.0" y="214.33333333333334" width="78.666666666666671" height="71.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="252.3333333333334" width="78.666666666666671" height="84.333333333333343"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -910,7 +913,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-3O-PKD">
-                                                        <rect key="frame" x="0.0" y="286" width="78.666666666666671" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="336.66666666666669" width="78.666666666666671" height="84.333333333333314"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -918,7 +921,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCY-fJ-QAR">
-                                                        <rect key="frame" x="0.0" y="357.33333333333337" width="78.666666666666671" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="421" width="78.666666666666671" height="84"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -926,7 +929,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a50-a2-p1I">
-                                                        <rect key="frame" x="0.0" y="429" width="78.666666666666671" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="505.00000000000006" width="78.666666666666671" height="84.333333333333314"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -934,7 +937,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-Gw-osg">
-                                                        <rect key="frame" x="0.0" y="500.33333333333343" width="78.666666666666671" height="71.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="589.33333333333326" width="78.666666666666671" height="84"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -942,7 +945,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjY-t0-glX">
-                                                        <rect key="frame" x="0.0" y="572" width="78.666666666666671" height="71.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="673.33333333333326" width="78.666666666666671" height="84.333333333333371"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                                         <connections>
@@ -1050,11 +1053,11 @@
             <objects>
                 <viewController id="xlT-5S-1GO" customClass="ClassDetailViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ykp-hJ-fqd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-4d-quf">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-pr-1o5">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
@@ -1149,7 +1152,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-iC-hYJ">
-                                        <rect key="frame" x="0.0" y="496" width="393" height="219"/>
+                                        <rect key="frame" x="0.0" y="496" width="393" height="346"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1179,6 +1182,133 @@
             </objects>
             <point key="canvasLocation" x="1551.9083969465648" y="1659.8591549295775"/>
         </scene>
+        <!--Teacher Create Class View Controller-->
+        <scene sceneID="lk3-1y-fSa">
+            <objects>
+                <viewController id="ckW-Nd-Ie5" customClass="TeacherCreateClassViewController" customModule="CLCGrindsetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1G-6h-IZP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3rs-2J-h2y">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add A Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc4-GR-1ge">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="35.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h80-LJ-x6c">
+                                        <rect key="frame" x="0.0" y="35.666666666666629" width="393" height="572"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Course ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2N-ni-fTr">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Course Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5s-H1-SFp">
+                                                <rect key="frame" x="0.0" y="49" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number of Credits" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PiF-IK-e18">
+                                                <rect key="frame" x="0.0" y="98" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-f0-KxG">
+                                                <rect key="frame" x="0.0" y="146.66666666666666" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Term Offered" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zlo-86-AyC">
+                                                <rect key="frame" x="0.0" y="195.66666666666666" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Eligible Grades" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZo-ME-EOl">
+                                                <rect key="frame" x="0.0" y="244.66666666666663" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Prerequisites" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-0X-NLK">
+                                                <rect key="frame" x="0.0" y="293.66666666666663" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Corequisites" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQH-gU-M6t">
+                                                <rect key="frame" x="0.0" y="342.33333333333337" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Enrollment Notes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqe-W5-DoQ">
+                                                <rect key="frame" x="0.0" y="391.33333333333337" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB6-6G-vul">
+                                                <rect key="frame" x="0.0" y="440.33333333333337" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Is this course an elective?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8x-ml-dhp">
+                                                <rect key="frame" x="0.0" y="489.33333333333337" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Course Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-md-DCf">
+                                                <rect key="frame" x="0.0" y="538" width="393" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-sW-472">
+                                        <rect key="frame" x="0.0" y="607.66666666666663" width="393" height="107.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Class"/>
+                                        <connections>
+                                            <action selector="addClassButton:" destination="ckW-Nd-Ie5" eventType="touchUpInside" id="KU9-31-48q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lc4-GR-1ge" firstAttribute="height" secondItem="3rs-2J-h2y" secondAttribute="height" multiplier="0.05" id="2WC-pV-8Dm"/>
+                                    <constraint firstItem="dxn-sW-472" firstAttribute="height" secondItem="3rs-2J-h2y" secondAttribute="height" multiplier="0.15" id="AQO-tC-ggq"/>
+                                    <constraint firstItem="h80-LJ-x6c" firstAttribute="height" secondItem="3rs-2J-h2y" secondAttribute="height" multiplier="0.8" id="hJ7-mw-jjd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fIh-It-G83"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="fIh-It-G83" firstAttribute="trailing" secondItem="3rs-2J-h2y" secondAttribute="trailing" id="K80-74-0az"/>
+                            <constraint firstItem="3rs-2J-h2y" firstAttribute="top" secondItem="fIh-It-G83" secondAttribute="top" id="khv-iv-h8u"/>
+                            <constraint firstItem="3rs-2J-h2y" firstAttribute="leading" secondItem="fIh-It-G83" secondAttribute="leading" id="o3e-gj-6Av"/>
+                            <constraint firstItem="fIh-It-G83" firstAttribute="bottom" secondItem="3rs-2J-h2y" secondAttribute="bottom" id="w6c-jK-6th"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QIW-Wf-rJK"/>
+                    <connections>
+                        <outlet property="corerequisitesInput" destination="qQH-gU-M6t" id="1u2-gj-Op0"/>
+                        <outlet property="courseIDInput" destination="L2N-ni-fTr" id="Km9-iS-MTV"/>
+                        <outlet property="courseNameInput" destination="T5s-H1-SFp" id="v5p-sM-EX0"/>
+                        <outlet property="courseTypeInput" destination="bzv-md-DCf" id="ljr-2A-VJF"/>
+                        <outlet property="creditsInput" destination="PiF-IK-e18" id="ghU-rc-qk6"/>
+                        <outlet property="descriptionInput" destination="ZB6-6G-vul" id="Hb8-se-vuO"/>
+                        <outlet property="electiveInput" destination="Z8x-ml-dhp" id="TSR-UL-k1j"/>
+                        <outlet property="eligibleGradesInput" destination="PZo-ME-EOl" id="OLp-Sc-vtN"/>
+                        <outlet property="enrollmentNotesInput" destination="rqe-W5-DoQ" id="SGq-c2-Uph"/>
+                        <outlet property="prerequisitesInput" destination="f6h-0X-NLK" id="IIt-7e-QDX"/>
+                        <outlet property="subjectInput" destination="Zka-f0-KxG" id="Unr-La-SLW"/>
+                        <outlet property="termInput" destination="Zlo-86-AyC" id="ai3-FT-wjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-Fh-eSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3054.1984732824426" y="-2221.1267605633802"/>
+        </scene>
         <!--Edit Teach Profile View Controller-->
         <scene sceneID="pOO-Lb-kOx">
             <objects>
@@ -1202,7 +1332,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Information To Your Bio" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-wn-uOl">
-                                        <rect key="frame" x="0.0" y="250.33333333333334" width="393" height="357.33333333333314"/>
+                                        <rect key="frame" x="0.0" y="250.33333333333334" width="393" height="357.33333333333326"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1244,7 +1374,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="fqf-9u-ub8"/>
-        <segue reference="lSP-Jz-Dpn"/>
+        <segue reference="4LS-CX-lKQ"/>
         <segue reference="arj-ap-xEv"/>
     </inferredMetricsTieBreakers>
     <resources>
