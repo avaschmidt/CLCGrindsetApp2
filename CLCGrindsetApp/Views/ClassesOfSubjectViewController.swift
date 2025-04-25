@@ -43,7 +43,6 @@ class ClassesOfSubjectViewController: UIViewController, UITableViewDataSource, U
         classClicked.cclass = currentSubjectClasses[indexPath.row]
         performSegue(withIdentifier: "seeDetails", sender: nil)
 //        performSegue(withIdentifier: "backToSchedule", sender: nil)
-        
         print(currentSubjectClasses[indexPath.row].courseName)
         classClicked.selectedClass = currentSubjectClasses[indexPath.row].courseName
         AppData.studentSchedule[periodClicked.selectedPeriod - 1] = classClicked.selectedClass

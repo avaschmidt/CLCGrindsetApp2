@@ -72,10 +72,10 @@ AV301G	Avid Jr	0.5	Elective	Fall Semester	9th, 10th, 11th, 12th	N/A	N/A	N/A	N/A	
 AV302G	Avid Jr	0.5	Elective	Spring Semester	9th, 10th, 11th, 12th	N/A	N/A	N/A	N/A	Yes	Normal
 AV401G	Avid Sr	0.5	Elective	Fall Semester	9th, 10th, 11th, 12th	N/A	N/A	N/A	N/A	Yes	Normal
 AV402G	Avid Sr	0.5	Elective	Spring Semester	9th, 10th, 11th, 12th	N/A	N/A	N/A	N/A	Yes	Normal
-EN101C	FRESHMAN CLIMB ENGLISH	0.5	English	Fall Semester	9th	N/A	N/A	Approval of the division leader.	The purpose of Climb is to increase reading, writing, and thinking skills for students with below-grade-level reading.	Yes	Normal
 EN101G	FRESHMAN ENGLISH	0.5	English	Fall Semester	9th	N/A	N/A	Recommendation by the division leader.	Develops writing skills, reading comprehension, and research techniques.	Yes	Normal
-EN102C	FRESHMAN CLIMB ENGLISH	0.5	English	Spring Semester	9th	N/A	N/A	Approval of the division leader.	Same as Fall, with a focus on strengthening reading and writing skills.	Yes	Normal
 EN102G	FRESHMAN ENGLISH	0.5	English	Spring Semester	9th	N/A	N/A	Recommendation by the division leader.	Same as Fall, focusing on reading comprehension and writing strategies.	Yes	Normal
+EN101C    FRESHMAN CLIMB ENGLISH    0.5    English    Fall Semester    9th    N/A    N/A    Approval of the division leader.    The purpose of Climb is to increase reading, writing, and thinking skills for students with below-grade-level reading.    Yes    Normal
+EN102C    FRESHMAN CLIMB ENGLISH    0.5    English    Spring Semester    9th    N/A    N/A    Approval of the division leader.    Same as Fall, with a focus on strengthening reading and writing skills.    Yes    Normal
 EN103C	TARGETED READING LEVEL 1	0.5	English	Fall Semester	9th	N/A	N/A	Recommendation by the division leader.	Focuses on reading strategies for freshmen with weak reading skills.	Yes	Normal
 EN104C	TARGETED READING LEVEL 1	0.5	English	Spring Semester	9th	N/A	N/A	Recommendation by the division leader.	Continuation of reading improvement with strategies and class discussions.	Yes	Normal
 EN111G	H FRESHMAN ENGLISH	0.5	English	Fall Semester	9th	N/A	N/A	Placement by Division Leader	Honors level, focuses on advanced writing and higher-level thinking.	Yes	Honors
