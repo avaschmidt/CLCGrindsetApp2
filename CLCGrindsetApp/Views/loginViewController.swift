@@ -18,37 +18,11 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    
-    var students = [Student]()
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameOutlet.delegate = self
         passwordOutlet.delegate = self
-        AppData.ref = Firestore.firestore().collection("data").document("Accounts")
         
-        AppData.ref.addSnapshotListener { documentSnapshot, error in
-                guard let document = documentSnapshot else {
-                  print("Error fetching document: \(error!)")
-                  return
-                }
-                guard let data = document.data() else {
-                  print("Document data was empty.")
-                  return
-                }
-            
-            AppData.usernames.removeAll()
-            AppData.passwords.removeAll()
-            
-            for key in data.keys{
-                    let dataArray = data[key] as! [String : Any]
-                    let uncodedAccount = Student(dict: dataArray)
-                self.students.append(uncodedAccount)
-                AppData.usernames.append(uncodedAccount.username)
-                AppData.passwords.append(uncodedAccount.password)
-            }
-            
-            
-              }
 
         // Do any additional setup after loading the view.
     }
@@ -63,16 +37,17 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         var userFound = false
         var userIndex = -1
         for username in AppData.usernames{
-            if enteredUsername == username{
+            if enteredUsername.lowercased() == username.lowercased(){
                 userFound = true
-                userIndex = AppData.usernames.firstIndex(of: enteredUsername) ?? -1
+                userIndex = AppData.usernames.firstIndex(of: username) ?? -1
                 break
             }
         }
         
         if userFound && userIndex != -1{
             if enteredPassword == AppData.passwords[userIndex]{
-                AppData.currentStudent = students[userIndex]
+                AppData.currentStudent = AppData.students[userIndex]
+                AppData.saveUserAndPass()
                 performSegue(withIdentifier: "loginSuccess", sender: self)
             }else{
                 createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
@@ -82,6 +57,34 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    @IBAction func testAccount(_ sender: Any) {
+        // this is an account i made before
+        let enteredUsername = "mrseavertotally"
+        let enteredPassword = "pony"
+        
+        var userFound = false
+        var userIndex = -1
+        for username in AppData.usernames{
+            if enteredUsername.lowercased() == username.lowercased(){
+                userFound = true
+                userIndex = AppData.usernames.firstIndex(of: username) ?? -1
+                break
+            }
+        }
+        
+        if userFound && userIndex != -1{
+            if enteredPassword == AppData.passwords[userIndex]{
+                AppData.currentStudent = AppData.students[userIndex]
+                AppData.saveUserAndPass()
+                performSegue(withIdentifier: "loginSuccess", sender: self)
+            }else{
+                createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
+            }
+        }else{
+            createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
+        }
+    }
     
     
     

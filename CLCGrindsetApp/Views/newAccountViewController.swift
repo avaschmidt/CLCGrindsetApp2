@@ -40,6 +40,7 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
             var newStudent = Student(username: username, password: password, gradeLevel: 0, selectedClasses: [String](), name: username, age: 0)
             newStudent.addToFirebase(docRef: AppData.ref)
             AppData.currentStudent = newStudent
+            AppData.saveUserAndPass()
             
             performSegue(withIdentifier: "createSuccess", sender: self)
             
