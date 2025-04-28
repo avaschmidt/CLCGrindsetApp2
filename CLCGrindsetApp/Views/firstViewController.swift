@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 class firstViewController: UIViewController {
     
-    var students = [Student]()
+//    var students = [Student]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // this code will check if the account already exists. should probably reorganize students into AppData, but i dont have enough time to make that work
@@ -33,7 +33,7 @@ class firstViewController: UIViewController {
             for key in data.keys{
                     let dataArray = data[key] as! [String : Any]
                     let uncodedAccount = Student(dict: dataArray)
-                self.students.append(uncodedAccount)
+                AppData.students.append(uncodedAccount)
                 AppData.usernames.append(uncodedAccount.username)
                 AppData.passwords.append(uncodedAccount.password)
             }
@@ -62,7 +62,7 @@ class firstViewController: UIViewController {
         
         if userFound && userIndex != -1{
             if enteredPassword == AppData.passwords[userIndex]{
-                AppData.currentStudent = students[userIndex]
+                AppData.currentStudent = AppData.students[userIndex]
                 performSegue(withIdentifier: "skipLogin", sender: self)
             }else{
                 performSegue(withIdentifier: "toLogin", sender: self)
