@@ -58,6 +58,34 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    @IBAction func testAccount(_ sender: Any) {
+        // this is an account i made before
+        let enteredUsername = "mrseavertotally"
+        let enteredPassword = "pony"
+        
+        var userFound = false
+        var userIndex = -1
+        for username in AppData.usernames{
+            if enteredUsername.lowercased() == username.lowercased(){
+                userFound = true
+                userIndex = AppData.usernames.firstIndex(of: username) ?? -1
+                break
+            }
+        }
+        
+        if userFound && userIndex != -1{
+            if enteredPassword == AppData.passwords[userIndex]{
+                AppData.currentStudent = AppData.students[userIndex]
+                AppData.saveUserAndPass()
+                performSegue(withIdentifier: "loginSuccess", sender: self)
+            }else{
+                createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
+            }
+        }else{
+            createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
+        }
+    }
+    
     
     
     @IBAction func newAccountAction(_ sender: Any) {
