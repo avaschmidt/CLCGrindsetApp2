@@ -7,63 +7,25 @@
 
 import UIKit
 
-class ratingTableCell : UITableViewCell {
-    
-  
-    
-    @IBOutlet weak var RatingLabel: UILabel!
-    
-
-    @IBOutlet weak var RatingSC: UISegmentedControl!
-    
-    
-    @IBAction func SCAction(_ sender: UISegmentedControl) {
-        
-        let selectedIndex = sender.selectedSegmentIndex
-        
-        for i in 0...selectedIndex{
-            sender.setImage(UIImage(named: "star.fill"), forSegmentAt: i)
-        }
-        
-        for i in selectedIndex+1...4{
-            sender.setImage(UIImage(named: "star"), forSegmentAt: i)
-        }
-        
-        
-      
-        
-        
-    }
-    
-    func configureCell (text: String){
-        RatingLabel.text = text
-    }
-    
-}
 
 
 
 
 
-class rateOneClassViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+
+class rateOneClassViewController: UIViewController{
     
     
-    var ratingCatagories = ["Difficulty", "fun", "", ""]
+    
     
     
     @IBOutlet weak var titleOutletOneRate: UILabel!
     
     
-    @IBOutlet weak var rateOneTableView: UITableView!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        rateOneTableView.delegate = self
-        rateOneTableView.dataSource = self
-        
-        
         
         if let name = AppData.courseToRate?.courseName {
             titleOutletOneRate.text = "Please Rate \(name)"
@@ -75,28 +37,78 @@ class rateOneClassViewController: UIViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
     }
     
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ratingTableCell", for: indexPath) as! ratingTableCell
-        cell.configureCell(text: ratingCatagories[indexPath.row])
+    @IBAction func buttonAction(_ sender: UIButton) {
         
         
-        return cell
+        
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    @IBAction func funSC(_ sender: UISegmentedControl) {
+        let selectedIndex = sender.selectedSegmentIndex
+        
+        for i in 0...selectedIndex{
+            sender.setImage(UIImage(systemName: "star.fill"), forSegmentAt: i)
+        }
+        if selectedIndex != 4{
+            for i in selectedIndex+1...4{
+                sender.setImage(UIImage(systemName: "star"), forSegmentAt: i)
+            }
+        }
+        AppData.courseToRate?.totalFunRank.append(Double(selectedIndex))
+        AppData.courseToRate?.numberOfFunRank += 1
+    }
+    
+    
+    
+    @IBAction func difSC(_ sender: UISegmentedControl) {
+        let selectedIndex = sender.selectedSegmentIndex
+        
+        for i in 0...selectedIndex{
+            sender.setImage(UIImage(systemName: "star.fill"), forSegmentAt: i)
+        }
+        if selectedIndex != 4{
+            for i in selectedIndex+1...4{
+                sender.setImage(UIImage(systemName: "star"), forSegmentAt: i)
+            }
+        }
+        AppData.courseToRate?.totalDifficultyRank.append(Double(selectedIndex))
+        AppData.courseToRate?.numberOfDifficultyRank += 1
+    }
+    
+   
+    @IBAction func useSC(_ sender: UISegmentedControl) {
+        let selectedIndex = sender.selectedSegmentIndex
+        
+        for i in 0...selectedIndex{
+            sender.setImage(UIImage(systemName: "star.fill"), forSegmentAt: i)
+        }
+        if selectedIndex != 4{
+            for i in selectedIndex+1...4{
+                sender.setImage(UIImage(systemName: "star"), forSegmentAt: i)
+            }
+        }
+        AppData.courseToRate?.totalUsefulnessRank.append(Double(selectedIndex))
+        AppData.courseToRate?.numberOfUsefulnessRank += 1
+    }
+    
+    
+    
+    @IBAction func workSC(_ sender: UISegmentedControl) {
+        let selectedIndex = sender.selectedSegmentIndex
+        
+        for i in 0...selectedIndex{
+            sender.setImage(UIImage(systemName: "star.fill"), forSegmentAt: i)
+        }
+        if selectedIndex != 4{
+            for i in selectedIndex+1...4{
+                sender.setImage(UIImage(systemName: "star"), forSegmentAt: i)
+            }
+        }
+        AppData.courseToRate?.totalWorkRank.append(Double(selectedIndex))
+        AppData.courseToRate?.numberOfWorkRank += 1
+    }
+    
     
     
     
