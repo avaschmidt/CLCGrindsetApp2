@@ -8,7 +8,7 @@
 import UIKit
 
 class classClicked: UITableViewCell{
-    static var cclass: Course = Course(courseID: "",courseName: "",credits: "",subject: "",term: "",eligibleGrades: "",prerequisite: "",corequisite: "",enrollmentNotes: "",description: "",isElective: "",courseType: "", rank: [0, 0, 0, 0], rankCount: 0
+    static var cclass: Course = Course(courseID: "",courseName: "",credits: "",subject: "",term: "",eligibleGrades: "",prerequisite: "",corequisite: "",enrollmentNotes: "",description: "",isElective: "",courseType: ""
     )
     
     static var selectedClass = ""
