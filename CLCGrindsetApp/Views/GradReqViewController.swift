@@ -43,7 +43,7 @@ class GradReqViewController: UIViewController, UITableViewDataSource, UITableVie
         reqTableView.delegate = self
         reqTableView.dataSource = self
         
-        
+        reqTableView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
