@@ -22,7 +22,8 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usernameOutlet.delegate = self
         passwordOutlet.delegate = self
-        
+        usernameOutlet.text = ""
+        passwordOutlet.text = ""
 
         // Do any additional setup after loading the view.
     }
