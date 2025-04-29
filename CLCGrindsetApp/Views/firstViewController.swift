@@ -29,6 +29,7 @@ class firstViewController: UIViewController {
             
             AppData.usernames.removeAll()
             AppData.passwords.removeAll()
+            AppData.students.removeAll()
             
             for key in data.keys{
                     let dataArray = data[key] as! [String : Any]

@@ -56,6 +56,11 @@ class loginViewController: UIViewController, UITextFieldDelegate {
             if enteredPassword == AppData.passwords[userIndex]{
                 AppData.currentStudent = AppData.students[userIndex]
                 AppData.saveUserAndPass()
+                print(AppData.usernames[userIndex])
+                for hi in AppData.students{
+                    print("Account: \(hi.username)")
+                }
+                print(AppData.students[userIndex].username)
                 performSegue(withIdentifier: "loginSuccess", sender: self)
             }else{
                 createAlert(alertTitle: "Incorrect", alertDesc: "Username or password incorrect or nonexistent")
