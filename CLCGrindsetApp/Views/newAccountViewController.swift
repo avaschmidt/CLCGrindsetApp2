@@ -8,6 +8,8 @@
 import UIKit
 
 class newAccountViewController: UIViewController, UITextFieldDelegate {
+    
+    static var createdNew = false
 
     
     @IBOutlet weak var userNameOutlet: UITextField!
@@ -66,8 +68,9 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
             AppData.currentStudent = newStudent
             AppData.saveUserAndPass()
             
+            newAccountViewController.createdNew = true
             self.navigationController?.popViewController(animated: false)
-            performSegue(withIdentifier: "createSuccess", sender: nil)
+            
             
         }else{
             createAlert(alertTitle: "Error", alertDesc: "Username already exists.")

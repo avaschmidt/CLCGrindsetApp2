@@ -22,9 +22,18 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usernameOutlet.delegate = self
         passwordOutlet.delegate = self
-        
+        usernameOutlet.text = ""
+        passwordOutlet.text = ""
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if newAccountViewController.createdNew{
+            performSegue(withIdentifier: "loginSuccess", sender: nil)
+            newAccountViewController.createdNew = false
+            
+        }
     }
     
 
