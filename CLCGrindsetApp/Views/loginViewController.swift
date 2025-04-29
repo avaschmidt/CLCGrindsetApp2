@@ -27,6 +27,14 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if newAccountViewController.createdNew{
+            performSegue(withIdentifier: "loginSuccess", sender: nil)
+            newAccountViewController.createdNew = false
+            
+        }
+    }
+    
 
     @IBAction func submitAction(_ sender: Any) {
     
