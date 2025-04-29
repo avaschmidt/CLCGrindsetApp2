@@ -36,7 +36,6 @@ class TeacherCreateClassViewController: UIViewController {
     
     @IBOutlet weak var courseTypeInput: UITextField!
     
-    // need to add another text view :(
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,8 +56,12 @@ class TeacherCreateClassViewController: UIViewController {
         var elective = electiveInput.text
         var courseType = courseTypeInput.text
         
-        //var course = Course(courseID: courseID, courseName: courseName, credits: credits, subject: subject, term: term, eligibleGrades: grades, prerequisite: prerequisites, corequisite: corerequisites, enrollmentNotes: enrollmentNotes, description: description, isElective: elective, courseType: courseType, rank: 0, rankCount: 0)
-        //allCourses.append(course)
+        if courseID != "" && courseName != "" && credits != "" && subject != "" && term != "" && grades != "" && prerequisites != "" && corerequisites != "" && enrollmentNotes != "" && description != "" && description != "" && elective != "" && courseType != "" {
+            
+            var course = Course(courseID: courseID!, courseName: courseName!, credits: credits!, subject: subject!, term: term!, eligibleGrades: grades!, prerequisite: prerequisites!, corequisite: corerequisites!, enrollmentNotes: enrollmentNotes!, description: description!, isElective: elective!, courseType: courseType!)
+            allCourses.append(course)
+        }
+        
     }
     
 
