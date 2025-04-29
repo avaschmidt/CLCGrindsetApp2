@@ -16,6 +16,13 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var passwordOutlet: UITextField!
     
+    
+    @IBOutlet weak var nameOutlet: UITextField!
+    
+    
+    @IBOutlet weak var ageOutlet: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameOutlet.delegate = self
@@ -24,6 +31,11 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func tapAction(_ sender: Any) {
+        userNameOutlet.resignFirstResponder()
+        passwordOutlet.resignFirstResponder()
+    }
     
     @IBAction func createAction(_ sender: Any) {
     var username = userNameOutlet.text!
@@ -37,7 +49,19 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
         }
         
         if (!userFound){
-            var newStudent = Student(username: username, password: password, gradeLevel: 0, selectedClasses: [String](), name: username, age: 0)
+            var accountAge = -1
+            if let age = Int(ageOutlet.text!){
+                accountAge = age
+            }else{
+                createAlert(alertTitle: "Age not found", alertDesc: "Age is not an integer")
+                return
+            }
+            if accountAge <= 0{
+                createAlert(alertTitle: "Age not valid", alertDesc: "Enter a valid age")
+                return
+            }
+            var accountName = nameOutlet.text!
+            var newStudent = Student(username: username, password: password, gradeLevel: 0, selectedClasses: [String](), name: accountName, age: accountAge)
             newStudent.addToFirebase(docRef: AppData.ref)
             AppData.currentStudent = newStudent
             AppData.saveUserAndPass()
@@ -52,7 +76,7 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        userNameOutlet.resignFirstResponder(); passwordOutlet.resignFirstResponder();
+        textField.resignFirstResponder()
         return true
     }
     

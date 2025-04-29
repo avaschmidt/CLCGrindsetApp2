@@ -217,19 +217,31 @@ apfmae</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-V2-a5F">
-                                <rect key="frame" x="64" y="347" width="265" height="34"/>
+                                <rect key="frame" x="64" y="285" width="265" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOY-EW-vkl">
-                                <rect key="frame" x="64" y="432" width="265" height="34"/>
+                                <rect key="frame" x="64" y="347" width="265" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcU-dU-8mG">
+                                <rect key="frame" x="64" y="409" width="265" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jpo-C4-lZm">
+                                <rect key="frame" x="64" y="471" width="265" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-ld-A5r">
-                                <rect key="frame" x="159" y="502" width="75" height="35"/>
+                                <rect key="frame" x="159" y="611" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create"/>
@@ -240,15 +252,26 @@ apfmae</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TvI-tP-e1M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5Z8-wz-XUF" appends="YES" id="cqC-Gx-aTd"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JXK-NP-XWF"/>
                     <connections>
+                        <outlet property="ageOutlet" destination="jpo-C4-lZm" id="ejV-81-zgy"/>
+                        <outlet property="nameOutlet" destination="bcU-dU-8mG" id="s5m-1v-q54"/>
                         <outlet property="passwordOutlet" destination="qOY-EW-vkl" id="gWc-Mq-BT6"/>
                         <outlet property="userNameOutlet" destination="TOC-V2-a5F" id="mmo-Y3-gEi"/>
                         <segue destination="qHd-Ig-Mrz" kind="show" identifier="createSuccess" id="arj-ap-xEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kut-wA-LR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Z8-wz-XUF">
+                    <connections>
+                        <action selector="tapAction:" destination="42K-E9-l5s" id="IxU-TW-SzE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2277" y="-1549"/>
         </scene>
@@ -465,7 +488,7 @@ apfmae</string>
                         <nil key="title"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="obF-X6-JGL">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lKs-a1-dPC">
-                                <rect key="frame" x="269.66666666666669" y="5" width="107.33333333333331" height="34.333333333333336"/>
+                                <rect key="frame" x="261" y="5" width="116" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" title="Logout  ">
@@ -1584,7 +1607,7 @@ apfmae</string>
     <inferredMetricsTieBreakers>
         <segue reference="Ipu-85-Gy5"/>
         <segue reference="4LS-CX-lKQ"/>
-        <segue reference="gRm-mf-RVX"/>
+        <segue reference="arj-ap-xEv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="lock" width="960" height="720"/>
