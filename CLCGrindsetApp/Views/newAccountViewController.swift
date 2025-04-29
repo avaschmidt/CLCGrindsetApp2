@@ -42,7 +42,8 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
             AppData.currentStudent = newStudent
             AppData.saveUserAndPass()
             
-            performSegue(withIdentifier: "createSuccess", sender: self)
+            self.navigationController?.popViewController(animated: false)
+            performSegue(withIdentifier: "createSuccess", sender: nil)
             
         }else{
             createAlert(alertTitle: "Error", alertDesc: "Username already exists.")
