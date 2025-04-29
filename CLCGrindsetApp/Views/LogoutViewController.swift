@@ -15,14 +15,15 @@ class LogoutViewController: UIViewController {
 
         areYouLabel.text = "User logged in: \((AppData.currentStudent!).username!)\nAre You A..."
         
-        
+        self.navigationItem.hidesBackButton = true
+
         // Do any additional setup after loading the view.
     }
     
     @IBAction func logoutAction(_ sender: Any) {
         AppData.currentStudent = Student(dict: ["": ""])
         AppData.saveUserAndPass()
-        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*
