@@ -1273,14 +1273,17 @@ apfmae</string>
                                             <constraint firstAttribute="height" constant="75" id="gK6-Pp-w0f"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iQO-cD-Yry">
-                                        <rect key="frame" x="0.0" y="152" width="393" height="111"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iQO-cD-Yry">
+                                        <rect key="frame" x="0.0" y="152" width="393" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="kga-lJ-Xzp"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="text" translatesAutoresizingMaskIntoConstraints="NO" id="5O9-jH-sOP">
-                                        <rect key="frame" x="0.0" y="264" width="393" height="300"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="text" translatesAutoresizingMaskIntoConstraints="NO" id="5O9-jH-sOP">
+                                        <rect key="frame" x="0.0" y="228" width="393" height="300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="4PZ-Pj-0DT"/>
@@ -1289,8 +1292,8 @@ apfmae</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-8E-22n">
-                                        <rect key="frame" x="0.0" y="565" width="393" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-8E-22n">
+                                        <rect key="frame" x="0.0" y="529" width="393" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0lr-EH-Yvx"/>
                                         </constraints>
@@ -1298,8 +1301,8 @@ apfmae</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5N-8N-zqn">
-                                        <rect key="frame" x="0.0" y="606" width="393" height="75"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5N-8N-zqn">
+                                        <rect key="frame" x="0.0" y="570" width="393" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qf-9v-Jil">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="75"/>
@@ -1317,6 +1320,9 @@ apfmae</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Add To Schedule"/>
+                                                <connections>
+                                                    <action selector="addToSchedule:" destination="xlT-5S-1GO" eventType="touchUpInside" id="kg7-Xq-R43"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yil-kp-EeS">
                                                 <rect key="frame" x="343" y="0.0" width="50" height="75"/>
@@ -1329,8 +1335,8 @@ apfmae</string>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-iC-hYJ">
-                                        <rect key="frame" x="0.0" y="682" width="393" height="160"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-iC-hYJ">
+                                        <rect key="frame" x="0.0" y="646" width="393" height="196"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1338,11 +1344,9 @@ apfmae</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="5O9-jH-sOP" secondAttribute="trailing" id="AsU-Dy-Ytl"/>
-                                    <constraint firstItem="5O9-jH-sOP" firstAttribute="top" secondItem="iQO-cD-Yry" secondAttribute="bottom" id="ODo-ln-Lqi"/>
-                                    <constraint firstItem="iQO-cD-Yry" firstAttribute="top" secondItem="6IZ-Gb-Cz9" secondAttribute="bottom" id="S2R-7N-XDR"/>
-                                    <constraint firstItem="iQO-cD-Yry" firstAttribute="leading" secondItem="ChC-4d-quf" secondAttribute="leading" id="dHC-qC-NAG"/>
+                                    <constraint firstAttribute="trailing" secondItem="iQO-cD-Yry" secondAttribute="trailing" id="SPt-kN-maS"/>
                                     <constraint firstItem="5O9-jH-sOP" firstAttribute="leading" secondItem="ChC-4d-quf" secondAttribute="leading" id="lfY-zq-zjQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="iQO-cD-Yry" secondAttribute="trailing" id="soZ-hY-tbZ"/>
+                                    <constraint firstItem="iQO-cD-Yry" firstAttribute="leading" secondItem="ChC-4d-quf" secondAttribute="leading" id="mTK-gc-Di7"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -1565,6 +1569,7 @@ apfmae</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="RAH-eX-Exf"/>
         <segue reference="fqf-9u-ub8"/>
         <segue reference="4LS-CX-lKQ"/>
         <segue reference="arj-ap-xEv"/>
