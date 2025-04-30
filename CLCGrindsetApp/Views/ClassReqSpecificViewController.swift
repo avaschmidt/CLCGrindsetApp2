@@ -36,6 +36,8 @@ class ClassReqSpecificViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         var curCreditType = AppData.reqType
         
+        classesTableView.layer.cornerRadius = 10
+        
         hello: for course in allCourses {
             for specificType in countAs[curCreditType] {
                 if course.subject == specificType {
