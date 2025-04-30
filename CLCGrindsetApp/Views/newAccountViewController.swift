@@ -29,6 +29,8 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         userNameOutlet.delegate = self
         passwordOutlet.delegate = self
+        nameOutlet.delegate = self
+        ageOutlet.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -37,11 +39,25 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tapAction(_ sender: Any) {
         userNameOutlet.resignFirstResponder()
         passwordOutlet.resignFirstResponder()
+        ageOutlet.resignFirstResponder()
+        nameOutlet.resignFirstResponder()
     }
     
     @IBAction func createAction(_ sender: Any) {
-    var username = userNameOutlet.text!
-        var password = passwordOutlet.text!
+        let username = userNameOutlet.text!
+        if username.isEmpty{
+            createAlert(alertTitle: "Username not valid", alertDesc: "Username cannot be empty")
+            return
+        }
+        
+        let password = passwordOutlet.text!
+        if password.isEmpty{
+            createAlert(alertTitle: "Password not valid", alertDesc: "Password cannot be empty")
+            return
+        }
+        
+        let age = ageOutlet.text!
+        let name = nameOutlet.text!
         var userFound = false
         for usernameHi in AppData.usernames{
             if username.lowercased() == usernameHi.lowercased(){
