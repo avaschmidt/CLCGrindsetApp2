@@ -45,14 +45,14 @@ class newAccountViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func createAction(_ sender: Any) {
         let username = userNameOutlet.text!
-        if username.isEmpty{
-            createAlert(alertTitle: "Username not valid", alertDesc: "Username cannot be empty")
+        if username.count < 5{
+            createAlert(alertTitle: "Username not valid", alertDesc: "Username must be at least 5 characters long")
             return
         }
         
         let password = passwordOutlet.text!
-        if password.isEmpty{
-            createAlert(alertTitle: "Password not valid", alertDesc: "Password cannot be empty")
+        if password.count < 5{
+            createAlert(alertTitle: "Password not valid", alertDesc: "Password must be at least 5 characters long")
             return
         }
         
