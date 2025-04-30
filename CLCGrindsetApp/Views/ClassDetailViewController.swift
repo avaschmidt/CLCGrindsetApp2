@@ -32,6 +32,7 @@ class ClassDetailViewController: UIViewController  {
         self.navigationController?.popViewController(animated: true)
         
         //classClicked.selectedClass = currentSubjectClasses[periodClicked.selectedPeriod].courseName
+        //currentSubjectClasses[periodClicked.selectedPeriod] = classClicked.cclass.courseName
     }
     
 }
